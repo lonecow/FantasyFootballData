@@ -17,10 +17,10 @@ if __name__ == '__main__':
     flex_10_league = CreateFullVarList(10, data, FlexLeague())
 
 
-    files_to_write = [  (mafa_12_league, '/Users/robertbitel/MAFA_12_VAR_List.csv'),
-                        (mafa_14_league, '/Users/robertbitel/MAFA_14_VAR_List.csv'),
-                        (snn_12_league, '/Users/robertbitel/SNN_12_VAR_List.csv'),
-                        (flex_10_league, '/Users/robertbitel/FLEX_10_VAR_List.csv')]
+    files_to_write = [  (mafa_12_league, './MAFA_12_VAR_List.csv'),
+                        (mafa_14_league, './MAFA_14_VAR_List.csv'),
+                        (snn_12_league, './SNN_12_VAR_List.csv'),
+                        (flex_10_league, './FLEX_10_VAR_List.csv')]
 
 
     for (data, file_name) in files_to_write:

@@ -18,12 +18,12 @@
 		<link>
 			<name>Source</name>
 			<type>2</type>
-			<location>/Users/robertbitel/Workspace/FantasyFootballData/Source</location>
+			<location>PARENT-2-PROJECT_LOC/Source</location>
 		</link>
 		<link>
 			<name>Tests</name>
 			<type>2</type>
-			<location>/Users/robertbitel/Workspace/FantasyFootballData/Tests</location>
+			<location>PARENT-2-PROJECT_LOC/Tests</location>
 		</link>
 	</linkedResources>
 </projectDescription>
