@@ -7,6 +7,30 @@ Created on Aug 23, 2015
 from bs4 import BeautifulSoup
 import urllib2
 
+def removeJavaScript(content):
+    contents = ''
+    count = 0
+    for line in content.split('\n'):
+        copy_end_pos = len(line)
+
+        if count != 0:
+            copy_beg_pos = len(line)
+        else:
+            copy_beg_pos = 0
+
+        if '<script' in line:
+            copy_end_pos = line.find('<script')
+            count += line.count('<script')
+
+        if '</script' in line:
+            count -= line.count('</script')
+            if count == 0:
+                copy_beg_pos = line.rfind('</script>') + len('</script>')
+
+        contents += line[copy_beg_pos:copy_end_pos]
+    return contents    
+
+
 def ConvertTeam(team):
     team_list = {
                         'ARZ':'Ari',
@@ -92,9 +116,11 @@ class DefenseParser(object):
         headers = { 'User-Agent' : user_agent }
         req = urllib2.Request(website, None, headers)
         response = urllib2.urlopen(req)
-        page = response.read() 
+        page = removeJavaScript(response.read()) 
+        open('test', 'w').write(page)
 
         soup = BeautifulSoup(page, 'html.parser')
+
         div_table = soup.find('div', {'class':'toolDiv'})
         table_info = div_table.table.find_all('tr')
         for item in table_info:
