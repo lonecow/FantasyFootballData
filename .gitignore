@@ -1,2 +1,7 @@
 workspace
 *.pyc
+Source/FLEX_10_VAR_List.csv
+Source/MAFA_12_VAR_List.csv
+Source/MAFA_14_VAR_List.csv
+Source/SNN_12_VAR_List.csv
+Source/test
