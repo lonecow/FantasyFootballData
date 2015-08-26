@@ -6,13 +6,21 @@ Created on Aug 23, 2015
 import unittest
 import os
 
+import urllib
+import urlparse
+
 from EspnParser import EspnKickerParser
 
+def path2url(path):
+    return urlparse.urljoin(
+      'file:', urllib.pathname2url(path))
+
+path = path2url(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
+path2 = path2url(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
 
 class TestGetsCorrectNumberOfPlayers(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
         self.TestClass.AddPlayerStats(path)
 
 
@@ -28,8 +36,6 @@ class TestGetsCorrectNumberOfPlayers(unittest.TestCase):
 class TestGetsCorrectNumberOfPlayersTwoDownloads(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
-        path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
         self.TestClass.AddPlayerStats(path)
         self.TestClass.AddPlayerStats(path2)
 
@@ -47,8 +53,6 @@ class TestGetsCorrectNumberOfPlayersTwoDownloads(unittest.TestCase):
 class TestGetCorrectFirstPlayer(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
-        path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
         self.TestClass.AddPlayerStats(path)
         self.TestClass.AddPlayerStats(path2)
 
@@ -76,8 +80,6 @@ class TestGetCorrectFirstPlayer(unittest.TestCase):
 class TestGetCorrectSecondPlayer(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
-        path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
         self.TestClass.AddPlayerStats(path)
         self.TestClass.AddPlayerStats(path2)
 
@@ -105,8 +107,6 @@ class TestGetCorrectSecondPlayer(unittest.TestCase):
 class TestGetCorrectFifteenthPlayer(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
-        path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
         self.TestClass.AddPlayerStats(path)
         self.TestClass.AddPlayerStats(path2)
 
@@ -135,8 +135,6 @@ class TestGetCorrectFifteenthPlayer(unittest.TestCase):
 class TestGetCorrectSixteenthPlayer(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
-        path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
         self.TestClass.AddPlayerStats(path)
         self.TestClass.AddPlayerStats(path2)
 
@@ -163,8 +161,6 @@ class TestGetCorrectSixteenthPlayer(unittest.TestCase):
 class TestGetCorrectThirtythPlayer(unittest.TestCase):
     def setUp(self):
         self.TestClass = EspnKickerParser()
-        path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker1.html'))
-        path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'Kicker2.html'))
         self.TestClass.AddPlayerStats(path)
         self.TestClass.AddPlayerStats(path2)
 

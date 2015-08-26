@@ -5,12 +5,17 @@ Created on Aug 23, 2015
 '''
 import unittest
 import os
+import urllib
+import urlparse
 
 from EspnParser import EspnParser
 
+def path2url(path):
+    return urlparse.urljoin(
+      'file:', urllib.pathname2url(path))
 
-path = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'QB1.html'))
-path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'QB2.html'))
+path = path2url(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'QB1.html'))
+path2 = path2url(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'TestData', 'QB2.html'))
 
 class TestGetsCorrectNumberOfPlayers(unittest.TestCase):
     def setUp(self):
