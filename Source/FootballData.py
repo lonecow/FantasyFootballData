@@ -26,9 +26,9 @@ if __name__ == '__main__':
     for (data, file_name) in files_to_write:
         fd = open(file_name, 'w')
 
-        fd.write('Player,Position,Team,Var\n')
+        fd.write('Player,Position,Team,Var,Owner\n')
         for item in data:
-            fd.write('%s,%s,%s,%.4f\n' % (item['name'], item['pos'], item['team'], item['var']))
+            fd.write('%s,%s,%s,%.4f,%s\n' % (item['name'], item['pos'], item['team'], item['var'], item['owner']))
 
         fd.close()
 

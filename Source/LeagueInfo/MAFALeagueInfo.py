@@ -50,3 +50,7 @@ class MAFALeagueInfo(BaseLeagueInfo):
 
     def CreatePosData(self, data):
         return {'QB': data.quarter_backs, 'RB':data.runningbacks, 'WR':data.widerecievers, 'TE':data.tightends, 'K':data.kickers, 'D':data.defense}
+
+
+    def GetLeaguePlayerOweners(self):
+        return []

@@ -6,6 +6,8 @@ Created on Aug 23, 2015
 
 from BaseLeagueInfo import BaseLeagueInfo
 
+from CurrentRosterParser import CurrentRosterParser
+
 class SuhNommieNationLeagueInfo(BaseLeagueInfo):
     '''
     classdocs
@@ -51,4 +53,22 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
         super(BaseLeagueInfo, self).__init__()
 
     def CreatePosData(self, data):
+        '''
+        @type data : Espnparser.EspnData
+        '''
         return {'QB': data.quarter_backs, 'RB':data.runningbacks, 'WR':data.widerecievers, 'TE':data.tightends, 'K':data.kickers, 'D':data.defense}
+
+    def GetLeaguePlayerOweners(self):
+        import os
+        import urllib
+        import urlparse
+        def path2url(path):
+            return urlparse.urljoin(
+            'file:', urllib.pathname2url(path))
+
+        path = path2url(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'PlayerData.txt'))
+        TestClass = CurrentRosterParser()
+        TestClass.AddPlayerStats(path)
+
+        return TestClass.getPlayers()
+

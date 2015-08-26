@@ -56,3 +56,7 @@ class FlexLeague(BaseLeagueInfo):
         flex.extend(data.widerecievers)
         flex.extend(data.tightends)
         return {'FLEX':flex, 'OP':data.quarter_backs} 
+
+
+    def GetLeaguePlayerOweners(self):
+        return []

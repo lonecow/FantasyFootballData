@@ -6,6 +6,23 @@ from FlexLeague import FlexLeague
 
 
 def CreateFullVarList(NumberOfTeams, ParsedData, LeagueInfo):
+    '''
+    @type LeagueInfo :BaseLeagueInfo.BaseLeagueInfo
+    '''
+    def _addOwners(PlayerList, OwnerList):
+        retval = []
+        player_owner_dict = {}
+        for item in OwnerList:
+            player_owner_dict[item.name] = item.stats['OWNER']
+
+        for item in PlayerList:
+            try:
+                item['owner'] = player_owner_dict[item['name']]
+            except:
+                item['owner'] = 'FA'
+            retval.append(item)
+        return retval
+
     data = []
     starting_counts = LeagueInfo.GetPositionStartingCounts()
     max_counts = LeagueInfo.GetPositionMaxCounts()
@@ -14,7 +31,7 @@ def CreateFullVarList(NumberOfTeams, ParsedData, LeagueInfo):
     for pos in pos_data:
             data.extend(CreateList(NumberOfTeams, starting_counts[pos], pos_data[pos], NumberOfTeams * max_counts[pos], LeagueInfo.calculatePoints))
 
-    return sorted(data, key=lambda k: k['var'], reverse=True)
+    return _addOwners(sorted(data, key=lambda k: k['var'], reverse=True), LeagueInfo.GetLeaguePlayerOweners())
 
 
 
