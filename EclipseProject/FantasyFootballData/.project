@@ -18,12 +18,12 @@
 		<link>
 			<name>Source</name>
 			<type>2</type>
-			<location>PARENT-2-PROJECT_LOC/Source</location>
+			<locationURI>PARENT-2-PROJECT_LOC/Source</locationURI>
 		</link>
 		<link>
 			<name>Tests</name>
 			<type>2</type>
-			<location>PARENT-2-PROJECT_LOC/Tests</location>
+			<locationURI>PARENT-2-PROJECT_LOC/Tests</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
