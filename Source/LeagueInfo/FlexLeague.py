@@ -16,7 +16,7 @@ class FlexLeague(BaseLeagueInfo):
                     ('COMPLETIONS',      0),
                     ('ATTEMPTS',         0),
                     ('PASSING_YDS',      0.05),
-                    ('PASSING_TD',       7),
+                    ('PASSING_TD',       10),
                     ('PASSING_INT',      -2),
                     ('RUSHING_RUSH',     0),
                     ('RUSHING_YDS',      0.2),
