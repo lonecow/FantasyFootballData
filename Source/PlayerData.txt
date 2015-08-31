@@ -1,228 +1,48 @@
-Aaron Rodgers, GB QB~~TSD~~~@Chi~Sun 1:00~~1~1025~64.1~--~~--~31st~98.5~99.9~0
-Andrew Luck, Ind QB~~DHE~~~@Buf~Sun 1:00~~2~975~60.9~--~~--~2nd~96.7~99.9~0
-Ben Roethlisberger, Pit QB~~MIZE~~~@NE~Thu 8:30~~3~920~57.5~--~~--~8th~82.6~98.3~0.2
-DeMarco Murray, Phi RB~~FNG~~~@Atl~Mon 7:10~~1~909~56.8~--~~--~26th~98.4~99.9~0
-Peyton Manning, Den QB~~MIZE~~~Bal~Sun 4:25~~4~900~56.3~--~~--~20th~91.1~99.9~0
-Drew Brees, NO QB~~BIG~~~@Ari~Sun 4:05~~5~879~54.9~--~~--~26th~87~99.7~0
-Antonio Brown, Pit WR~~TSD~~~@NE~Thu 8:30~~1~877~54.8~--~~--~4th~99.3~100~0
-Le'Veon Bell, Pit RB  SSPD~~TSD~~~@NE~Thu 8:30~~2~794~49.6~--~~--~16th~49.5~99.9~0
-Demaryius Thomas, Den WR~~(|)~~~Bal~Sun 4:25~~2~793~49.6~--~~--~21st~99~99.9~0
-Jordy Nelson*, GB WR  O~~FNG~~~@Chi~Sun 1:00~~3~782~48.9~--~~--~24th~51.6~82.6~-17.4
-Matt Ryan, Atl QB~~NM~~~Phi~Mon 7:10~~6~756~47.3~--~~--~30th~71.4~95.5~0.6
-Tom Brady, NE QB  SSPD~~BIG~~~Pit~Thu 8:30~~7~748~46.8~--~~--~29th~18.9~95.6~0.4
-Russell Wilson, Sea QB~~(|)~~~@StL~Sun 1:00~~8~726~45.4~--~~--~19th~91.5~99.9~0
-Eli Manning, NYG QB~~DHE~~~@Dal~Sun 8:30~~9~684~42.8~--~~--~23rd~38.1~85.5~1.7
-Matt Forte, Chi RB~~JW~~~GB~Sun 1:00~~3~683~42.7~--~~--~15th~98.3~99.9~0
-Marshawn Lynch, Sea RB~~TH~~~@StL~Sun 1:00~~4~681~42.6~--~~--~6th~99.3~100~0
-Odell Beckham Jr., NYG WR  P~~KKI~~~@Dal~Sun 8:30~~4~679~42.4~--~~--~10th~98.5~99.9~0
-Arian Foster*, Hou RB  O~~BIG~~~KC~Sun 1:00~~5~669~41.8~--~~--~13th~6.7~89.3~-1.1
-Tony Romo, Dal QB~~NM~~~NYG~Sun 8:30~~10~663~41.4~--~~--~21st~61.1~94.7~0.6
-Joe Flacco, Bal QB~~Strk~~~@Den~Sun 4:25~~11~648~40.5~--~~--~18th~7.5~41.8~4.3
-Julio Jones, Atl WR~~FNG~~~Phi~Mon 7:10~~5~648~40.5~--~~--~32nd~98.6~99.9~0
-Philip Rivers, SD QB~~FNG~~~Det~Sun 4:05~~12~640~40~--~~--~10th~30.2~82~2.6
-Emmanuel Sanders, Den WR  P~~KKI~~~Bal~Sun 4:25~~6~633~39.6~--~~--~21st~91.9~99.5~0.1
-Dez Bryant, Dal WR  P~~TMMA~~~NYG~Sun 8:30~~7~632~39.5~--~~--~16th~99.1~100~0
-Ryan Tannehill, Mia QB~~Strk~~~@Wsh~Sun 1:00~~13~614~38.4~--~~--~32nd~42.4~87.9~1.7
-Jay Cutler, Chi QB~~TMMA~~~GB~Sun 1:00~~14~609~38.1~--~~--~9th~6.4~28.2~5.1
-Eddie Lacy, GB RB~~(|)~~~@Chi~Sun 1:00~~6~604~37.8~--~~--~19th~99.3~100~0
-Jeremy Maclin, KC WR~~MIZE~~~@Hou~Sun 1:00~~8~592~37~--~~--~30th~53.4~94.4~1.2
-Randall Cobb, GB WR~~(|)~~~@Chi~Sun 1:00~~9~587~36.7~--~~--~24th~97.1~99.9~0
-T.Y. Hilton, Ind WR  P~~FNG~~~@Buf~Sun 1:00~~9~587~36.7~--~~--~5th~94.9~99.8~0
-Matthew Stafford, Det QB~~FNG~~~@SD~Sun 4:05~~15~572~35.8~--~~--~15th~33.4~84.1~1.7
-Justin Forsett, Bal RB~~TH~~~@Den~Sun 4:25~~7~559~34.9~--~~--~9th~90.3~99~0.2
-DeSean Jackson, Wsh WR  P~~NM~~~Mia~Sun 1:00~~11~538~33.6~--~~--~20th~57~96.1~0.3
-Golden Tate, Det WR~~MIZE~~~@SD~Sun 4:05~~12~534~33.4~--~~--~13th~66~95.8~0.8
-Colin Kaepernick, SF QB~~TMMA~~~Min~Mon 10:20~~16~534~33.4~--~~--~12th~18.4~59.6~0.9
-Jeremy Hill, Cin RB~~KKI~~~@Oak~Sun 4:25~~8~531~33.2~--~~--~31st~96.6~99.8~0.1
-Andy Dalton, Cin QB~~DHE~~~@Oak~Sun 4:25~~17~529~33.1~--~~--~22nd~4~20.1~2.6
-DeAndre Hopkins, Hou WR~~Strk~~~KC~Sun 1:00~~13~503~31.4~--~~--~9th~86.8~98.7~0.4
-Mike Evans, TB WR  P~~TMMA~~~Ten~Sun 4:25~~14~494~30.9~--~~--~23rd~92.6~99.6~0.1
-Rob Gronkowski, NE TE~~TSD~~~Pit~Thu 8:30~~1~491~30.7~--~~--~22nd~99.3~100~0
-Calvin Johnson, Det WR~~KKI~~~@SD~Sun 4:05~~15~488~30.5~--~~--~13th~98.8~99.9~0
-J.J. Watt, Hou DE~~(|)~~~KC~Sun 1:00~~1~486.5~30.4~--~~--~--~97~98.1~-0.1
-Jamaal Charles, KC RB~~NM~~~@Hou~Sun 1:00~~9~484~30.3~--~~--~11th~99.3~99.9~0
-Cam Newton, Car QB~~TH~~~@Jac~Sun 1:00~~18~478~29.9~--~~--~16th~55.2~95.2~-0.4
-LeSean McCoy, Buf RB  Q~~KKI~~~Ind~Sun 1:00~~10~476~29.8~--~~--~23rd~95.3~99.9~0
-A.J. Green, Cin WR~~DHE~~~@Oak~Sun 4:25~~16~474~29.6~--~~--~6th~98~99.9~0
-Steve Smith Sr., Bal WR~~DHE~~~@Den~Sun 4:25~~17~472~29.5~--~~--~3rd~15.7~76.5~4.9
-Alshon Jeffery, Chi WR  Q~~DHE~~~GB~Sun 1:00~~18~471~29.4~--~~--~17th~91.3~99.5~0
-DeAndre Levy, Det LB  P~~FNG~~~@SD~Sun 4:05~~1~468.5~29.3~--~~--~--~85.8~92.1~0.6
-Lamar Miller, Mia RB~~TH~~~@Wsh~Sun 1:00~~11~458~28.6~--~~--~12th~90.1~98.8~0.3
-Alex Smith, KC QB~~JW~~~@Hou~Sun 1:00~~19~454~28.4~--~~--~6th~2.9~15.3~2.1
-Julian Edelman, NE WR  P~~KKI~~~Pit~Thu 8:30~~19~445~27.8~--~~--~25th~72.4~97.9~0.2
-Mark Ingram, NO RB~~Strk~~~@Ari~Sun 4:05~~12~443~27.7~--~~--~5th~91.3~99.2~0.3
-Luke Kuechly, Car LB~~KKI~~~@Jac~Sun 1:00~~2~439~27.4~--~~--~--~95.3~96.7~-0.3
-C.J. Anderson, Den RB~~NM~~~Bal~Sun 4:25~~13~438~27.4~--~~--~1st~97.6~99.9~0
-Lavonte David, TB LB~~JW~~~Ten~Sun 4:25~~3~432~27~--~~--~--~91.4~94.7~0.7
-Frank Gore, Ind RB~~BIG~~~@Buf~Sun 1:00~~14~428~26.8~--~~--~3rd~85~98.5~0.3
-Kelvin Benjamin*, Car WR  O~~JW~~~@Jac~Sun 1:00~~20~426~26.6~--~~--~15th~11.7~28.3~-70.7
-Kyle Orton, Buf QB~~TSD~~~Ind~Sun 1:00~~20~424~26.5~--~~--~13th~0~0.2~-0.1
-Sammy Watkins, Buf WR~~KKI~~~Ind~Sun 1:00~~21~422~26.4~--~~--~2nd~71.8~97.4~0.6
-D'Qwell Jackson, Ind LB~~TMMA~~~@Buf~Sun 1:00~~4~421~26.3~--~~--~--~39.3~51.1~-1.9
-Teddy Bridgewater, Min QB~~(|)~~~@SF~Mon 10:20~~21~421~26.3~--~~--~5th~11.2~52.7~6.1
-Ryan Fitzpatrick, NYJ QB~~Strk~~~Cle~Sun 1:00~~22~410~25.6~--~~--~4th~0.9~4~0.3
-Curtis Lofton, Oak LB~~MIZE~~~Cin~Sun 4:25~~5~404~25.3~--~~--~--~15.3~22.5~-2.8
-Greg Olsen, Car TE~~JW~~~@Jac~Sun 1:00~~2~402~25.1~--~~--~15th~96.6~99.7~0
-Brandon LaFell*, NE WR  O~~NM~~~Pit~Thu 8:30~~22~395~24.7~--~~--~25th~6.1~77.8~-2.1
-Alfred Morris, Wsh RB~~MIZE~~~Mia~Sun 1:00~~15~394~24.6~--~~--~22nd~91.4~99.2~0.1
-Jarvis Landry, Mia WR~~NM~~~@Wsh~Sun 1:00~~23~389~24.3~--~~--~31st~38~91.4~1.8
-Darren Sproles, Phi RB~~NM~~~@Atl~Mon 7:10~~16~388~24.3~--~~--~26th~7.1~44.3~1.8
-Eric Decker, NYJ WR~~Strk~~~Cle~Sun 1:00~~24~386~24.1~--~~--~12th~21.6~87.7~0.9
-Jordan Matthews, Phi WR~~BIG~~~@Atl~Mon 7:10~~24~386~24.1~--~~--~28th~79.4~97.4~0.7
-Martellus Bennett, Chi TE~~JW~~~GB~Sun 1:00~~3~378~23.6~--~~--~16th~87.8~97.5~0.3
-Anquan Boldin, SF WR~~TMMA~~~Min~Mon 10:20~~26~376~23.5~--~~--~8th~12.6~68~6.6
-C.J. Mosley, Bal LB  P~~TH~~~@Den~Sun 4:25~~6~376~23.5~--~~--~--~82.5~90~0.9
-Jimmy Graham, Sea TE~~TH~~~@StL~Sun 1:00~~4~373~23.3~--~~--~5th~98.8~99.9~0
-Joique Bell*, Det RB  O~~TSD~~~@SD~Sun 4:05~~17~372~23.3~--~~--~17th~34.9~90.9~0.1
-Paul Worrilow, Atl LB~~MIZE~~~Phi~Mon 7:10~~7~371~23.2~--~~--~--~56.9~67.2~0.2
-Giovani Bernard, Cin RB~~KKI~~~@Oak~Sun 4:25~~18~370~23.1~--~~--~31st~45.7~93~0.6
-Roddy White, Atl WR  Q~~NM~~~Phi~Mon 7:10~~27~367~22.9~--~~--~32nd~19.1~86.6~1.4
-Jamie Collins, NE LB~~KKI~~~Pit~Thu 8:30~~8~362~22.6~--~~--~--~56.9~67.2~-1.6
-Morgan Burnett, GB S~~FNG~~~@Chi~Sun 1:00~~1~359.5~22.5~--~~--~--~76~83.1~-1.3
-Nick Foles, StL QB~~KKI~~~Sea~Sun 1:00~~24~356~22.3~--~~--~1st~1.6~12.6~0.1
-Andre Ellington, Ari RB~~TMMA~~~NO~Sun 4:05~~19~355~22.2~--~~--~30th~63.6~94.9~0.8
-Lawrence Timmons, Pit LB  P~~DHE~~~@NE~Thu 8:30~~9~353~22.1~--~~--~--~28~37.6~-4.8
-Brandon Marshall, Den LB  P~~TMMA~~~Bal~Sun 4:25~~10~352~22~--~~--~--~40.4~51.6~-2.5
-Knile Davis, KC RB~~BIG~~~@Hou~Sun 1:00~~20~352~22~--~~--~11th~2~53.7~1.1
-Mike Wallace, Min WR~~Strk~~~@SF~Mon 10:20~~28~351~21.9~--~~--~11th~38.4~92.8~0.8
-Alec Ogletree, StL LB~~JW~~~Sea~Sun 1:00~~11~349~21.8~--~~--~--~47.5~57.2~-2.6
-Vincent Jackson, TB WR~~JW~~~Ten~Sun 4:25~~29~348~21.8~--~~--~23rd~47.6~93.5~1
-Brandon Marshall, NYJ WR~~JW~~~Cle~Sun 1:00~~29~348~21.8~--~~--~12th~55.3~94.8~0.9
-Antonio Gates, SD TE  SSPD~~KKI~~~Det~Sun 4:05~~5~346~21.6~--~~--~20th~10.9~69.1~-0.4
-Matt Asiata, Min RB~~BIG~~~@SF~Mon 10:20~~21~346~21.6~--~~--~14th~0.9~5~0.3
-Michael Floyd, Ari WR  Q~~TMMA~~~NO~Sun 4:05~~31~346~21.6~--~~--~19th~8.4~77.9~2.2
-Rueben Randle, NYG WR  Q~~BIG~~~@Dal~Sun 8:30~~32~344~21.5~--~~--~10th~0.8~11.4~1.3
-Chris Ivory, NYJ RB~~DHE~~~Cle~Sun 1:00~~22~343~21.4~--~~--~27th~25.4~87.4~1.7
-Mark Sanchez, Phi QB~~KKI~~~@Atl~Mon 7:10~~25~342~21.4~--~~--~27th~0.1~1.2~0
-Keenan Allen, SD WR~~TH~~~Det~Sun 4:05~~33~342~21.4~--~~--~7th~65.3~95.7~0.9
-Kenny Stills, Mia WR~~MIZE~~~@Wsh~Sun 1:00~~35~340~21.3~--~~--~31st~2.2~21.5~5.7
-Devin Hester, Atl WR~~TSD~~~Phi~Mon 7:10~~36~339~21.2~--~~--~32nd~0.4~1.3~0.2
-Coby Fleener, Ind TE~~MIZE~~~@Buf~Sun 1:00~~6~339~21.2~--~~--~1st~8.8~29.3~1.6
-Eddie Royal, Chi WR~~TSD~~~GB~Sun 1:00~~37~336~21~--~~--~17th~5.7~46.6~23.6
-Rashad Johnson, Ari S~~BIG~~~NO~Sun 4:05~~2~336~21~--~~--~--~13.3~18.3~-3.2
-Andre Williams, NYG RB~~DHE~~~@Dal~Sun 8:30~~23~336~21~--~~--~10th~3.4~55.5~-1.4
-Daryl Smith, Bal LB~~DHE~~~@Den~Sun 4:25~~13~335~20.9~--~~--~--~17.1~24.6~-2.8
-T.J. McDonald, StL S  P~~KKI~~~Sea~Sun 1:00~~3~334~20.9~--~~--~--~51.6~58.2~0.6
-Delanie Walker, Ten TE  P~~MIZE~~~@TB~Sun 4:25~~7~331~20.7~--~~--~17th~36.6~71.7~2.7
-Charles Woodson, Oak S~~TSD~~~Cin~Sun 4:25~~4~330~20.6~--~~--~--~46.2~55.4~-2.7
-Jonathan Stewart, Car RB~~KKI~~~@Jac~Sun 1:00~~24~330~20.6~--~~--~29th~76.4~96.7~0.6
-Harrison Smith, Min S~~TSD~~~@SF~Mon 10:20~~5~327~20.4~--~~--~--~72~78~-1.5
-Marques Colston, NO WR~~Strk~~~@Ari~Sun 4:05~~38~325~20.3~--~~--~22nd~10.7~73.7~6.2
-Chris Borland, SF LB~~FNG~~~Min~Mon 10:20~~14~323~20.2~--~~--~--~1~2.1~-1
-Percy Harvin, Buf WR  P~~(|)~~~Ind~Sun 1:00~~39~322~21.5~--~~--~2nd~5.6~59.7~-9.3
-Demario Davis, NYJ LB~~BIG~~~Cle~Sun 1:00~~15~322~20.1~--~~--~--~7.6~12.4~-2.2
-Doug Baldwin, Sea WR~~MIZE~~~@StL~Sun 1:00~~40~319~19.9~--~~--~27th~4.7~34.1~1.8
-Eric Weddle, SD S~~JW~~~Det~Sun 4:05~~6~318~19.9~--~~--~--~66.5~72.9~-1.6
-Tre Mason, StL RB~~TMMA~~~Sea~Sun 1:00~~25~318~19.9~--~~--~4th~11.6~80.2~2
-Jelani Jenkins, Mia LB~~JW~~~@Wsh~Sun 1:00~~16~317.5~19.8~--~~--~--~21.1~28.4~-2.2
-Adam Jones, Cin CB~~(|)~~~@Oak~Sun 4:25~~1~316~19.8~--~~--~--~16.7~21.6~-1
-Fred Jackson, Buf RB~~MIZE~~~Ind~Sun 1:00~~26~313~19.6~--~~--~23rd~3~52.8~-0.2
-Michael Griffin, Ten S  P~~TMMA~~~@TB~Sun 4:25~~8~313~19.6~--~~--~--~26.8~33.6~-1.2
-Torrey Smith, SF WR~~MIZE~~~Min~Mon 10:20~~41~310~19.4~--~~--~8th~16.8~85.1~2
-Telvin Smith, Jac LB~~KKI~~~Car~Sun 1:00~~17~310~19.4~--~~--~--~11.8~17.4~-1.7
-Andre Johnson, Ind WR~~TH~~~@Buf~Sun 1:00~~42~308~19.3~--~~--~5th~68.6~95.9~0.8
-James Laurinaitis, StL LB~~NM~~~Sea~Sun 1:00~~19~306.5~19.2~--~~--~--~37~45.6~-2.4
-Nigel Bradham, Buf LB~~TSD~~~Ind~Sun 1:00~~20~305.5~19.1~--~~--~--~16.7~23.7~-2.8
-Allen Hurns, Jac WR~~BIG~~~Car~Sun 1:00~~43~305~19.1~--~~--~18th~0.2~2.4~0.4
-Travis Kelce, KC TE~~FNG~~~@Hou~Sun 1:00~~8~303~18.9~--~~--~2nd~91.5~98.8~0.3
-K.J. Wright, Sea LB~~TSD~~~@StL~Sun 1:00~~22~300~18.8~--~~--~--~7.2~12.6~-2.1
-Blake Bortles, Jac QB~~TH~~~Car~Sun 1:00~~27~300~18.8~--~~--~14th~1~6.4~0.8
-Malcom Floyd, SD WR~~DHE~~~Det~Sun 4:05~~44~299~18.7~--~~--~7th~3.1~32.1~2.8
-Vincent Rey, Cin LB~~NM~~~@Oak~Sun 4:25~~23~297~18.6~--~~--~--~1.6~3.2~-1.2
-Branden Oliver, SD RB~~JW~~~Det~Sun 4:05~~27~297~18.6~--~~--~2nd~0.6~8.9~0.4
-Barry Church, Dal S~~Strk~~~NYG~Sun 8:30~~10~295~18.4~--~~--~--~56.2~62.7~0.7
-Johnathan Cyprien, Jac S~~MIZE~~~Car~Sun 1:00~~12~293~18.3~--~~--~--~54.3~61.3~0.2
-Keenan Robinson, Wsh LB~~NM~~~Mia~Sun 1:00~~25~290.5~18.2~--~~--~--~8.7~14.8~-2.1
-Bobby Wagner, Sea LB~~FNG~~~@StL~Sun 1:00~~26~290~18.1~--~~--~--~81.1~88.5~1.8
-Steven Jackson, Atl RB~~Strk~~~Phi~Mon 7:10~~28~286~17.9~--~~--~21st~0.4~1.7~-0.2
-Preston Brown, Buf LB~~DHE~~~Ind~Sun 1:00~~28~285~17.8~--~~--~--~5.9~10.2~-2.6
-Larry Fitzgerald, Ari WR~~TSD~~~NO~Sun 4:05~~45~284~17.8~--~~--~19th~26.6~87.6~2.3
-Kendall Wright, Ten WR~~NM~~~@TB~Sun 4:25~~45~284~17.8~--~~--~26th~5.8~61.7~2.8
-Julius Thomas, Jac TE  Q~~BIG~~~Car~Sun 1:00~~9~281~17.6~--~~--~14th~67.8~95.3~-1
-Benjamin Cunningham, StL RB~~TSD~~~Sea~Sun 1:00~~29~281~17.6~--~~--~4th~0.1~0.8~0
-Martavis Bryant, Pit WR~~BIG~~~@NE~Thu 8:30~~47~281~17.6~--~~--~4th~31.3~90.2~2.8
-Carson Palmer, Ari QB  P~~JW~~~NO~Sun 4:05~~29~280~17.5~--~~--~28th~11.5~40.7~7.2
-Kenny Britt, StL WR~~TH~~~Sea~Sun 1:00~~49~279~17.4~--~~--~1st~0.5~5.4~0.4
-Pierre Garcon, Wsh WR~~DHE~~~Mia~Sun 1:00~~50~278~17.4~--~~--~20th~4~46.3~13.5
-Shane Vereen, NYG RB~~FNG~~~@Dal~Sun 8:30~~30~277~17.3~--~~--~10th~15.2~83.8~-0.1
-Reggie Nelson, Cin S~~MIZE~~~@Oak~Sun 4:25~~16~276.5~17.3~--~~--~--~13.1~18.1~-2.3
-Rashad Jennings, NYG RB~~JW~~~@Dal~Sun 8:30~~31~276~17.3~--~~--~10th~37.6~91~1
-James Jones, NYG WR~~JW~~~@Dal~Sun 8:30~~52~275~17.2~--~~--~10th~0.2~0.9~0
-Donte Whitner, Cle S~~DHE~~~@NYJ~Sun 1:00~~18~271~16.9~--~~--~--~20~27.8~-1.5
-Heath Miller, Pit TE~~Strk~~~@NE~Thu 8:30~~10~270~16.9~--~~--~26th~8.5~30.4~4.3
-Andrew Hawkins, Cle WR~~TSD~~~@NYJ~Sun 1:00~~53~269~16.8~--~~--~29th~0.3~2.7~0.2
-Greg Jennings, Mia WR  P~~TH~~~@Wsh~Sun 1:00~~54~267~16.7~--~~--~31st~0.6~5~0.2
-Reggie Wayne, Ind WR~~(|)~~~@Buf~Sun 1:00~~55~266~16.6~--~~--~5th~1.4~24.4~23.4
-Stephen Gostkowski, NE K~~TMMA~~~Pit~Thu 8:30~~1~265~16.6~--~~--~25th~97.7~99.8~0
-Johnathan Joseph, Hou CB~~TH~~~KC~Sun 1:00~~4~264~16.5~--~~--~--~13.7~19.4~-2.1
-Sio Moore, Oak LB  P~~(|)~~~Cin~Sun 4:25~~33~264~16.5~--~~--~--~6~11~-2.8
-Markus Wheaton, Pit WR~~Strk~~~@NE~Thu 8:30~~56~262~16.4~--~~--~4th~2.3~20~7.5
-Terrance Williams, Dal WR~~TSD~~~NYG~Sun 8:30~~57~261~16.3~--~~--~16th~4.8~37.1~4.5
-Kirk Cousins, Wsh QB~~JW~~~Mia~Sun 1:00~~31~259~16.2~--~~--~7th~0.1~0.9~0.4
-Anthony Barr, Min LB~~BIG~~~@SF~Mon 10:20~~35~256~16~--~~--~--~8.4~14.4~-3.4
-Jason Witten, Dal TE~~NM~~~NYG~Sun 8:30~~11~253~15.8~--~~--~25th~85.1~97.1~0.6
-Michael Crabtree, Oak WR~~TH~~~Cin~Sun 4:25~~60~253~15.8~--~~--~14th~3.3~30.1~7
-Alfred Blue, Hou RB~~FNG~~~KC~Sun 1:00~~33~251~15.7~--~~--~13th~19.7~79.7~5.3
-Cody Parkey, Phi K~~MIZE~~~@Atl~Mon 7:10~~2~251~15.7~--~~--~26th~83.5~91.5~0.4
-Karlos Dansby, Cle LB~~TSD~~~@NYJ~Sun 1:00~~40~250~15.6~--~~--~--~25.6~33.6~-1.1
-Jerrell Freeman, Ind LB~~Strk~~~@Buf~Sun 1:00~~41~248.5~15.5~--~~--~--~24.5~32.3~-2.2
-Zach Ertz, Phi TE  Q~~TMMA~~~@Atl~Mon 7:10~~12~247~15.4~--~~--~8th~55.8~86.9~-1.1
-Emmanuel Lamur, Cin LB~~TH~~~@Oak~Sun 4:25~~46~244~15.3~--~~--~--~0.8~1.7~-0.9
-Adam Vinatieri, Ind K~~KKI~~~@Buf~Sun 1:00~~3~243~15.2~--~~--~20th~94.1~99.4~0
-Terrance West, Cle RB~~DHE~~~@NYJ~Sun 1:00~~35~242~15.1~--~~--~7th~1.4~28.2~-1.9
-Clay Matthews, GB LB  P~~Strk~~~@Chi~Sun 1:00~~47~241~15.1~--~~--~--~32.2~43.3~-4.3
-Dan Bailey, Dal K~~DHE~~~NYG~Sun 8:30~~4~241~15.1~--~~--~27th~73.3~82.4~0.9
-Bobby Rainey, TB RB~~(|)~~~Ten~Sun 4:25~~36~236~14.8~--~~--~32nd~0.1~0.7~-0.1
-Matt Bryant, Atl K~~Strk~~~Phi~Mon 7:10~~5~234~14.6~--~~--~15th~67.9~77.7~0.2
-Latavius Murray, Oak RB~~FNG~~~Cin~Sun 4:25~~37~234~14.6~--~~--~25th~64.9~94.9~0.9
-Cecil Shorts III, Hou WR~~MIZE~~~KC~Sun 1:00~~64~226~14.1~--~~--~9th~0.5~6.1~1.9
-Charles Clay, Buf TE  Q~~Strk~~~Ind~Sun 1:00~~13~225~14.1~--~~--~30th~4~14.9~3.5
-Larry Donnell, NYG TE  P~~NM~~~@Dal~Sun 8:30~~13~225~14.1~--~~--~29th~12.9~37.8~6.1
-Isaiah Crowell, Cle RB~~BIG~~~@NYJ~Sun 1:00~~41~225~14.1~--~~--~7th~19.1~86.3~0.5
-Mason Crosby, GB K~~NM~~~@Chi~Sun 1:00~~6~224~14~--~~--~31st~61.8~72.5~1.9
-Steven Hauschka, Sea K~~BIG~~~@StL~Sun 1:00~~7~223~13.9~--~~--~24th~91.8~98.7~0
-Harry Douglas, Ten WR~~FNG~~~@TB~Sun 4:25~~65~222~13.9~--~~--~26th~0.2~1.1~-0.1
-T.J. Ward, Den S~~TMMA~~~Bal~Sun 4:25~~34~220~13.8~--~~--~--~21.4~29.1~-2.2
-Mychal Rivera, Oak TE~~DHE~~~Cin~Sun 4:25~~16~218~13.6~--~~--~17th~0.3~1.5~0
-Trent Richardson, Oak RB~~TH~~~Cin~Sun 4:25~~42~214~13.4~--~~--~25th~0.4~3.9~-0.4
-Darren McFadden, Dal RB~~MIZE~~~NYG~Sun 8:30~~43~213~13.3~--~~--~27th~13.4~80.4~0.2
-Tony Jefferson, Ari S~~NM~~~NO~Sun 4:05~~38~212~13.3~--~~--~--~0.4~0.9~-0.6
-Donte Moncrief, Ind WR  P~~FNG~~~@Buf~Sun 1:00~~68~212~13.3~--~~--~5th~1.1~27.2~0.5
-Caleb Sturgis, Mia K~~FNG~~~@Wsh~Sun 1:00~~12~206~12.9~--~~--~17th~17.7~23.3~0.5
-LeGarrette Blount, NE RB  SSPD~~Strk~~~Pit~Thu 8:30~~45~204~12~--~~--~8th~12.8~88~1.2
-Dwayne Allen, Ind TE~~(|)~~~@Buf~Sun 1:00~~17~203~12.7~--~~--~1st~49~84.5~-0.5
-Jacquian Williams, NYG LB~~(|)~~~@Dal~Sun 8:30~~64~198~12.4~--~~--~--~0~0~0
-Graham Gano, Car K~~TH~~~@Jac~Sun 1:00~~14~194~12.1~--~~--~28th~1.9~3~0
-Stedman Bailey, StL WR~~NM~~~Sea~Sun 1:00~~71~194~12.1~--~~--~1st~0.1~0.9~-0.3
-Allen Robinson, Jac WR~~TH~~~Car~Sun 1:00~~71~194~12.1~--~~--~18th~21.8~87.5~1.5
-Bishop Sankey, Ten RB~~BIG~~~@TB~Sun 4:25~~48~192~12~--~~--~18th~9~76.6~0.8
-Owen Daniels, Den TE~~TH~~~Bal~Sun 4:25~~20~191~11.9~--~~--~11th~26.6~60.5~4.7
-Chandler Catanzaro, Ari K~~(|)~~~NO~Sun 4:05~~15~189~11.8~--~~--~32nd~5.7~8.1~0.8
-Mike Glennon, TB QB~~JW~~~Ten~Sun 4:25~~33~188~11.8~--~~--~17th~0~0.1~0
-Phil Dawson, SF K~~TH~~~Min~Mon 10:20~~16~186~11.6~--~~--~12th~8.4~12.9~0.5
-Jonas Gray, NE RB~~(|)~~~Pit~Thu 8:30~~50~185~11.6~--~~--~8th~6.1~36.5~2.1
-Shaun Hill, Min QB~~TSD~~~@SF~Mon 10:20~~34~184~11.5~--~~--~5th~0~0.1~0
-Robert Griffin, Wsh QB  Q~~JW~~~Mia~Sun 1:00~~35~181~11.3~--~~--~7th~1.6~9.9~-2.6
-Charles Johnson, Min WR~~TMMA~~~@SF~Mon 10:20~~77~181~11.3~--~~--~11th~10.1~73.9~6.9
-Jordan Cameron, Mia TE~~FNG~~~@Wsh~Sun 1:00~~21~175~10.9~--~~--~31st~65.1~88.4~3.6
-Doug Martin, TB RB~~TMMA~~~Ten~Sun 4:25~~52~170~10.6~--~~--~32nd~23.2~87.3~1.6
-Wes Welker, Den WR~~BIG~~~Bal~Sun 4:25~~84~169~10.6~--~~--~21st~0.6~2.3~0.2
-Shayne Graham, FA K~~TSD~~~** BYE **~~~23~168~10.5~--~~--~--~0.1~0.3~0
-Ben Tate, Pit RB~~Strk~~~@NE~Thu 8:30~~53~168~10.5~--~~--~16th~0.1~0.3~-0.1
-Reggie Bush, SF RB~~KKI~~~Min~Mon 10:20~~54~166~10.4~--~~--~24th~5.5~46.5~-0.5
-Jordan Reed, Wsh TE  P~~TMMA~~~Mia~Sun 1:00~~23~160~10~--~~--~6th~3.4~13.5~0.3
-Daniel Herron, Ind RB~~(|)~~~@Buf~Sun 1:00~~56~158~9.9~--~~--~3rd~0.5~13.3~1.3
-Boobie Dixon, Buf RB  P~~MIZE~~~Ind~Sun 1:00~~57~157~9.8~--~~--~23rd~0~0.5~0
-Carlos Hyde, SF RB~~TMMA~~~Min~Mon 10:20~~59~149~9.3~--~~--~24th~84.2~97.8~0.4
-Ryan Mathews, Phi RB~~DHE~~~@Atl~Mon 7:10~~60~148~9.3~--~~--~26th~17.8~85.5~1.7
-Matt Prater, Det K~~JW~~~@SD~Sun 4:05~~28~136~9.1~--~~--~15th~72.1~82.2~-0.3
-Josh Gordon, Cle WR  SSPD~~(|)~~~@NYJ~Sun 1:00~~108~107~6.7~--~~--~29th~0.1~0.9~-0.1
-Vernon Davis, SF TE~~DHE~~~Min~Mon 10:20~~37~93~5.8~--~~--~12th~9.5~31.1~1.2
-Kerwynn Williams, Ari RB~~TMMA~~~NO~Sun 4:05~~88~79~4.6~--~~--~30th~0~0.2~-0.1
-Eric Ebron, Det TE  P~~(|)~~~@SD~Sun 4:05~~43~79~4.9~--~~--~7th~3.6~16.3~2
-Montee Ball, Den RB~~Strk~~~Bal~Sun 4:25~~93~64~4~--~~--~1st~5.4~61.2~-0.5
-Adrian Peterson, Min RB  P~~(|)~~~@SF~Mon 10:20~~127~23~1.4~--~~--~14th~98.8~99.9~0
-Jadeveon Clowney, Hou DE, LB  Q~~BIG~~~KC~Sun 1:00~~135~18~1.1~--~~--~--~8.4~18.4~-1.1
-Johnny Manziel, Cle QB  Q~~KKI~~~@NYJ~Sun 1:00~~57~9~0.6~--~~--~25th~0.4~7.1~1.3
-Ray Rice, FA RB~~FNG~~~** BYE **~~~158~0~0~--~~--~--~0.2~6~-4.1
-
+Aaron Rodgers, GB QBBreaking News~~TSD~~~
+Andrew Luck, Ind QB~~DHE~~~
+Ben Roethlisberger, Pit QBRecent News~~MIZE~~~
+DeMarco Murray, Phi RB~~FNG~~~
+Peyton Manning, Den QBRecent News~~MIZE~~~
+Drew Brees, NO QB~~BIG~~~
+Antonio Brown, Pit WRRecent News~~TSD~~~
+Le'Veon Bell, Pit RB  SSPDRecent News~~TSD~~~
+Demaryius Thomas, Den WR~~(|)~~~
+Matt Ryan, Atl QB~~NM~~~
+Tom Brady, NE QB  SSPDBreaking Video~~BIG~~~
+Russell Wilson, Sea QB~~(|)~~~
+Eli Manning, NYG QB~~DHE~~~
+Matt Forte, Chi RBRecent News~~JW~~~
+Marshawn Lynch, Sea RB~~TH~~~
+Odell Beckham Jr., NYG WR  P~~KKI~~~
+Tony Romo, Dal QB~~NM~~~
+Julio Jones, Atl WR~~FNG~~~
+Dez Bryant, Dal WR  PBreaking News~~TMMA~~~
+Ryan Tannehill, Mia QB~~Strk~~~
+Jay Cutler, Chi QBRecent News~~TMMA~~~
+Eddie Lacy, GB RB~~(|)~~~
+T.Y. Hilton, Ind WR~~FNG~~~
+Matthew Stafford, Det QBRecent News~~FNG~~~
+Justin Forsett, Bal RB~~TH~~~
+Golden Tate, Det WR~~MIZE~~~
+Jeremy Hill, Cin RB~~KKI~~~
+DeAndre Hopkins, Hou WR~~Strk~~~
+Mike Evans, TB WR  QBreaking Video~~TMMA~~~
+Rob Gronkowski, NE TEBreaking News~~TSD~~~
+Calvin Johnson, Det WRBreaking News~~KKI~~~
+Jamaal Charles, KC RBRecent News~~NM~~~
+Cam Newton, Car QB~~TH~~~
+LeSean McCoy, Buf RB  QRecent News~~KKI~~~
+A.J. Green, Cin WRRecent News~~DHE~~~
+Alshon Jeffery, Chi WR  QBreaking News~~DHE~~~
+Mark Ingram, NO RB~~Strk~~~
+C.J. Anderson, Den RB~~NM~~~
+Frank Gore, Ind RB~~BIG~~~
+Greg Olsen, Car TE~~JW~~~
+Alfred Morris, Wsh RB~~MIZE~~~
+Jordan Matthews, Phi WR~~BIG~~~
+Jimmy Graham, Sea TE~~TH~~~
+Vincent Jackson, TB WRRecent News~~JW~~~
+Carson Palmer, Ari QB  PRecent News~~JW~~~
+Jerrell Freeman, Ind LB~~Strk~~~
+Carlos Hyde, SF RBRecent News~~TMMA~~~
+Adrian Peterson, Min RB  P~~(|)~~~

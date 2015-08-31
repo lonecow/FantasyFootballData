@@ -27,13 +27,18 @@ class CurrentRosterPlayer(object):
     def __init__(self, soup, header_info):
         self.stats = {}
 
+        print soup
         info_list = soup.split('~')
         self.name = info_list[0].split(', ')[0]
-        self.team = info_list[0].split(', ')[1].split('\xa0')[0]
-        self.pos = info_list[0].split(', ')[1].split('\xa0')[1]
+        self.team = info_list[0].split(', ')[1].split(' ')[0]
+        self.pos = info_list[0].split(', ')[1].split('Break')[0]
 
+        print self.name
+        print self.team
+        print self.pos
         for (stat, line_num) in header_info.getHeaderInfo():
             self.stats[stat] = info_list[line_num]
+        print self.stats
 
 
 class CurrentRosterParser(object):
