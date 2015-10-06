@@ -27,6 +27,7 @@ def WriteByPosition(Data, FileName):
     for item in Data:
         count += 1
 
+        item['pos'] = item['pos'].replace(',', '_')
         if item['pos'] not in lists_by_pos:
             lists_by_pos[item['pos']] = []
 
@@ -39,6 +40,7 @@ def WriteByPosition(Data, FileName):
     column = 1
     data = []
     for pos in lists_by_pos:
+        pos = pos.replace(',', '_')
         if len(data) < row:
             data.append('** %s **,,,,,,' %(pos))
             (row, column) = _IncrementRow(row, column)
@@ -51,11 +53,13 @@ def WriteByPosition(Data, FileName):
             (row, column) = _IncrementRow(row, column)
 
         for item in lists_by_pos[pos]:
+            for key in item:
+                item[key] = str(item[key]).replace(',', '_')
             
             if len(data) < row:
-                data.append('%s,%s,%s,%s,%.2f,%s,' % (item['count'],item['name'], item['pos'], item['team'], item['var'], item['owner']))
+                data.append('%s,%s,%s,%s,%.2f,%s,' % (item['count'],item['name'], item['pos'], item['team'], float(item['var']), item['owner']))
             else:
-                data[row - 1] += '%s,%s,%s,%s,%.2f,%s,' % (item['count'],item['name'], item['pos'], item['team'], item['var'], item['owner'])
+                data[row - 1] += '%s,%s,%s,%s,%.2f,%s,' % (item['count'],item['name'], item['pos'], item['team'], float(item['var']), item['owner'])
 
             (row, column) = _IncrementRow(row, column)
 
