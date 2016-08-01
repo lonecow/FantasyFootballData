@@ -31,7 +31,7 @@ class EspnKickerPlayer(object):
         self.pos = 'K'
 
         for item in soup.find_all('tr', {'class': 'tableBody'}):
-            if item.td.string == '2015 Projections':
+            if item.td.string == '2016 Projections':
                 proj_item = item
         
         player_stat_list = proj_item.find_all('td', {'class': 'playertableStat'})
