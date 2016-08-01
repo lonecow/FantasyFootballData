@@ -4,7 +4,10 @@ Created on Aug 23, 2015
 @author: robertbitel
 '''
 from bs4 import BeautifulSoup
-import urllib2
+try:
+   import urllib2
+except:
+    import urllib.request as urllib2
 
 class EspnKickerStatHeader(object):
     def __init__(self, soup):
@@ -24,7 +27,7 @@ class EspnKickerPlayer(object):
 
         player_name_item = soup.find_all('span', {'class': 'subheadPlayerNameLink'})[0]
         self.name = player_name_item.a.string
-        self.team = player_name_item.getText().encode('utf8').split(', ')[1].split(' ')[0]
+        self.team = player_name_item.getText().encode('utf8').split(b', ')[1].split(b' ')[0].decode()
         self.pos = 'K'
 
         for item in soup.find_all('tr', {'class': 'tableBody'}):

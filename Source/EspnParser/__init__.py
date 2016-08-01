@@ -1,7 +1,7 @@
 
-from EspnParser import EspnParser
-from EspnKickerParser import EspnKickerParser
-from DefenseParser import DefenseParser
+from .EspnParser import EspnParser
+from .EspnKickerParser import EspnKickerParser
+from .DefenseParser import DefenseParser
 
 class EspnData(object):
     def __init__(self):

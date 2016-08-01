@@ -4,7 +4,10 @@ Created on Aug 23, 2015
 @author: robertbitel
 '''
 
-import urllib2
+try:
+   import urllib2
+except:
+    import urllib.request as urllib2
 
 def ConvertTeam(team):
     return team
@@ -27,18 +30,18 @@ class CurrentRosterPlayer(object):
     def __init__(self, soup, header_info):
         self.stats = {}
 
-        print soup
-        info_list = soup.split('~')
-        self.name = info_list[0].split(', ')[0]
-        self.team = info_list[0].split(', ')[1].split(' ')[0]
-        self.pos = info_list[0].split(', ')[1].split('Break')[0]
+        print(soup)
+        info_list = soup.split(b'~')
+        self.name = info_list[0].split(b', ')[0]
+        self.team = info_list[0].split(b', ')[1].split(b' ')[0]
+        self.pos = info_list[0].split(b', ')[1].split(b'Break')[0]
 
-        print self.name
-        print self.team
-        print self.pos
+        print(self.name)
+        print(self.team)
+        print(self.pos)
         for (stat, line_num) in header_info.getHeaderInfo():
             self.stats[stat] = info_list[line_num]
-        print self.stats
+        print(self.stats)
 
 
 class CurrentRosterParser(object):
@@ -53,8 +56,8 @@ class CurrentRosterParser(object):
         page = response.read() 
 
         header = CurrentRosterStatHeader('')
-        for item in page.split('\n'):
-            if '~' in item:
+        for item in page.split(b'\n'):
+            if b'~' in item:
                 self._players.append(CurrentRosterPlayer(item, header))
             pass
     

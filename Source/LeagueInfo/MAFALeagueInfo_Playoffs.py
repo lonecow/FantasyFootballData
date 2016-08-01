@@ -6,7 +6,7 @@ Created on Aug 23, 2015
 
 from .BaseLeagueInfo import BaseLeagueInfo
 
-class MAFALeagueInfo(BaseLeagueInfo):
+class MAFALeagueInfo_Playoffs(BaseLeagueInfo):
     '''
     classdocs
     '''
@@ -49,7 +49,37 @@ class MAFALeagueInfo(BaseLeagueInfo):
         super(BaseLeagueInfo, self).__init__()
 
     def CreatePosData(self, data):
-        return {'QB': data.quarter_backs, 'RB':data.runningbacks, 'WR':data.widerecievers, 'TE':data.tightends, 'K':data.kickers, 'D':data.defense}
+        qbs=[]
+        for player in data.quarter_backs:
+            if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
+                qbs.append(player)
+
+        rbs=[]
+        for player in data.runningbacks:
+            if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
+                rbs.append(player)
+
+        wrs=[]
+        for player in data.widerecievers:
+            if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
+                wrs.append(player)
+
+        te=[]
+        for player in data.tightends:
+            if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
+                te.append(player)
+
+        k=[]
+        for player in data.kickers:
+            if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
+                k.append(player)
+
+        df=[]
+        for player in data.defense:
+            if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
+                df.append(player)
+
+        return {'QB':qbs, 'RB':rbs, 'WR':wrs, 'TE':te, 'K':k, 'D':df}
 
 
     def GetLeaguePlayerOweners(self):

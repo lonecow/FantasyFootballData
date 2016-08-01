@@ -5,12 +5,15 @@ Created on Aug 23, 2015
 '''
 
 from bs4 import BeautifulSoup
-import urllib2
+try:
+   import urllib2
+except:
+    import urllib.request as urllib2
 
 def removeJavaScript(content):
     contents = ''
     count = 0
-    for line in content.split('\n'):
+    for line in content.split(b'\n'):
         copy_end_pos = len(line)
 
         if count != 0:
@@ -18,16 +21,16 @@ def removeJavaScript(content):
         else:
             copy_beg_pos = 0
 
-        if '<script' in line:
-            copy_end_pos = line.find('<script')
-            count += line.count('<script')
+        if b'<script' in line:
+            copy_end_pos = line.find(b'<script')
+            count += line.count(b'<script')
 
-        if '</script' in line:
-            count -= line.count('</script')
+        if b'</script' in line:
+            count -= line.count(b'</script')
             if count == 0:
-                copy_beg_pos = line.rfind('</script>') + len('</script>')
+                copy_beg_pos = line.rfind(b'</script>') + len(b'</script>')
 
-        contents += line[copy_beg_pos:copy_end_pos]
+        contents += str(line[copy_beg_pos:copy_end_pos])
     return contents    
 
 

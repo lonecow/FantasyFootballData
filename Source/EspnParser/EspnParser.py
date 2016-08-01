@@ -5,7 +5,10 @@ Created on Aug 23, 2015
 '''
 
 from bs4 import BeautifulSoup
-import urllib2
+try:
+    import urllib2
+except:
+    import urllib.request as urllib2
 
 def ConvertTeam(team):
     return team
@@ -39,9 +42,11 @@ class EspnPlayer(object):
         self.stats = {}
 
         player_name_item = soup.find_all('td', {'class': 'playertablePlayerName'})[0]
-        self.name = player_name_item.a.string
-        self.team = ConvertTeam(player_name_item.getText().encode('utf8').split(', ')[1].split('\xc2\xa0')[0])
-        self.pos = player_name_item.getText().encode('utf8').split('\xc2\xa0')[1]
+        self.name = str(player_name_item.a.string)
+
+
+        self.team = ConvertTeam(player_name_item.getText().encode('utf8').split(b', ')[1].split(b'\xc2\xa0')[0]).decode()
+        self.pos = player_name_item.getText().encode('utf8').split(b'\xc2\xa0')[1].decode()
 
         player_stat_list = soup.find_all('td', {'class': 'playertableStat'})
         for count in range(len(player_stat_list)):

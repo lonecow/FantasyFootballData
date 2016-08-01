@@ -4,9 +4,9 @@ Created on Aug 23, 2015
 @author: robertbitel
 '''
 
-from BaseLeagueInfo import BaseLeagueInfo
+from .BaseLeagueInfo import BaseLeagueInfo
 
-from CurrentRosterParser import CurrentRosterParser
+from .CurrentRosterParser import CurrentRosterParser
 
 class SuhNommieNationLeagueInfo(BaseLeagueInfo):
     '''
@@ -60,8 +60,15 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
 
     def GetLeaguePlayerOweners(self):
         import os
-        import urllib
-        import urlparse
+        try:
+           import urllib.request as urllib
+        except:
+           import urllib
+        try:
+           import urlparse
+        except:
+            import urllib.parse as urlparse
+
         def path2url(path):
             return urlparse.urljoin(
             'file:', urllib.pathname2url(path))

@@ -4,7 +4,7 @@ Created on Aug 23, 2015
 @author: robertbitel
 '''
 
-from BaseLeagueInfo import BaseLeagueInfo
+from .BaseLeagueInfo import BaseLeagueInfo
 
 class FlexLeague(BaseLeagueInfo):
     '''

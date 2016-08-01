@@ -16,7 +16,7 @@ def WriteByPosition(Data, FileName):
     def _IncrementRow(Row, Column):
         Row += 1
 
-        if Row == 67:
+        if Row == 70:
             Column += 6
             Row = 1
 
@@ -27,7 +27,7 @@ def WriteByPosition(Data, FileName):
     for item in Data:
         count += 1
 
-        item['pos'] = item['pos'].replace(',', '_')
+        item['pos'] = str(item['pos']).replace(',', '_')
         if item['pos'] not in lists_by_pos:
             lists_by_pos[item['pos']] = []
 
