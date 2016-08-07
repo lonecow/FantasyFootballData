@@ -37,19 +37,19 @@ class FFTodayData(object):
         dl_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=50&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=0')
         dl_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=50&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=1')
         dl_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=50&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=2')
-        self.defense.append(dl_parser.getPlayers())
+        self.defense.extend(dl_parser.getPlayers())
 
         lb_parser = LBParser()
         lb_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=60&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=0')
         lb_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=60&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=1')
         lb_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=60&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=2')
-        self.defense.append(lb_parser.getPlayers())
+        self.defense.extend(lb_parser.getPlayers())
 
         db_parser = DBParser()
         db_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=70&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=0')
         db_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=70&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=1')
         db_parser.AddPlayerStats('http://www.fftoday.com/rankings/playerproj.php?Season=2016&PosID=70&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=2')
-        self.defense.append(db_parser.getPlayers())
+        self.defense.extend(db_parser.getPlayers())
 
 
 if __name__ == '__main__':
