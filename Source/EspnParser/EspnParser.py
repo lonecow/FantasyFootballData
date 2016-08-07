@@ -96,9 +96,8 @@ class EspnParser(object):
 if __name__ == '__main__':
     import os
 
-    path = 'file://%s' % (os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'EspnParserTest','TestData', 'QB1.html'))
-    path2 = 'file://%s' % (os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'EspnParserTest','TestData', 'QB2.html'))
+    path = 'file:///%s' % (os.path.realpath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'Tests', 'EspnParserTest','TestData', 'QB1_2016.html')))
     print(path)
     TestClass = EspnParser()
     TestClass.AddPlayerStats(path)
-    TestClass.AddPlayerStats(path2)
+    #TestClass.AddPlayerStats(path2)
