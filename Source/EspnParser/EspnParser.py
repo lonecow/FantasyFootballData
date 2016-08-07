@@ -77,6 +77,18 @@ class EspnParser(object):
     def __init__(self):
         self._players = []
 
+    @staticmethod
+    def PageHasPlayers(website):
+        user_agent = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3'
+        headers = { 'User-Agent' : user_agent }
+        req = urllib2.Request(website, None, headers)
+        response = urllib2.urlopen(req)
+        page = response.read() 
+
+        soup = BeautifulSoup(page, 'html.parser')
+        second_level_header = soup.find('tr', {'class': 'playerTableBgRowSubhead tableSubHead'})
+        return second_level_header != None
+
     def AddPlayerStats(self, website):
         user_agent = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3'
         headers = { 'User-Agent' : user_agent }

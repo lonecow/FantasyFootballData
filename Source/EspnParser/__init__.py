@@ -5,25 +5,37 @@ from .DefenseParser import DefenseParser
 
 class EspnData(object):
     def __init__(self):
-        quarterback_parser = EspnParser()
-        quarterback_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=0')
-        quarterback_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=0&startIndex=40')
-        self.quarter_backs = quarterback_parser.getPlayers()
 
-        runningback_parser = EspnParser()
-        runningback_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2')
-        runningback_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&startIndex=40')
-        self.runningbacks = runningback_parser.getPlayers()
+        self.quarter_backs = []
+        self.widerecievers = []
+        self.runningbacks = []
+        self.tightends = []
 
-        widereciever_parser = EspnParser()
-        widereciever_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=4')
-        widereciever_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=4&startIndex=40')
-        self.widerecievers = widereciever_parser.getPlayers()
+        positions = [   ('QB', self.quarter_backs),
+                        ('WR', self.widerecievers),
+                        ('TE', self.tightends),
+                        ('RB', self.runningbacks)]
+        base_parser = EspnParser()
 
-        tightend_parser = EspnParser()
-        tightend_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=6')
-        tightend_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?slotCategoryId=6&startIndex=40')
-        self.tightends = tightend_parser.getPlayers()
+        categories = [0, 2, 4, 6]
+        for category in categories:
+            for index in range(0, 300, 40):
+                website = 'http://games.espn.com/ffl/tools/projections?&slotCategoryId=%s&startIndex=%s' % (category, index)
+                if EspnParser.PageHasPlayers(website):
+                    base_parser.AddPlayerStats(website)
+                elif index == 0:
+                    raise Exception('Something is wrong with the website. Pattern might have changed')
+
+        for player in base_parser.getPlayers():
+            found = False
+            for pos_name, pos_list in positions:
+                if player.pos == pos_name:
+                    pos_list.append(player)
+                    found = True
+
+            if not found:
+                raise Exception('Could Not find Position [%s]' % player.pos)
+
 
         kicker_parser = EspnKickerParser()
         kicker_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=17')
