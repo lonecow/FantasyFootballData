@@ -5,22 +5,34 @@ Created on Aug 23, 2015
 '''
 
 from bs4 import BeautifulSoup
-try:
-    import urllib2
-except:
-    import urllib.request as urllib2
+import urllib.request as urllib2
 
 def ConvertTeam(team):
     return team
 
 class EspnStatHeader(object):
     def __init__(self, soup):
-        #for item in soup.find_all('td', {'class': 'playertableData'}):
-        #    print(item)
-        #for item in soup.find_all('td', {'class': 'playertableStat'}):
-        #    print(item.a.string)
-        #pass
-        '''for now we are just going to hard code it. If we have time we will get this later'''
+        first_level_set_to_check = ['PLAYERS', 'PASSING', 'RUSHING', 'RECEIVING', 'TOTAL']
+        second_level_set_to_check = ['RNK', 'PLAYER, TEAM POS', 'C/A', 'YDS', 'TD' ]
+
+        #we are going to check to make sure nothing has changed with how the data is set up
+        first_level_header = soup.find('tr', {'class': 'playerTableBgRowHead tableHead playertableSectionHeader'})
+        first_level_entries = first_level_header.find_all('th')
+
+        for actual,expected in zip(first_level_entries, first_level_set_to_check):
+            if actual.string != expected:
+                raise Exception('ESPN PARSER ERROR: Header Mismatch Expected: [%s] Actual: [%s]' % (expected, actual.string))
+
+
+        second_level_header = soup.find('tr', {'class': 'playerTableBgRowSubhead tableSubHead'})
+        second_level_entries = second_level_header.find_all('td')
+
+        for actual,expected in zip(second_level_entries, second_level_set_to_check):
+            #if actual.string != expected:
+            #raise Exception('ESPN PARSER ERROR: Header Mismatch Expected: [%s] Actual: [%s]' % (expected, actual.string))
+            if actual.get_text().strip() != expected:
+                raise Exception('ESPN PARSER ERROR: Header Mismatch Expected: [%s] Actual: [%s]' % (expected, actual.get_text().strip()))
+
         self._data = [  'PASSING_C/A',
                         'PASSING_YDS',
                         'PASSING_TD',
@@ -43,7 +55,6 @@ class EspnPlayer(object):
 
         player_name_item = soup.find_all('td', {'class': 'playertablePlayerName'})[0]
         self.name = str(player_name_item.a.string)
-
 
         self.team = ConvertTeam(player_name_item.getText().encode('utf8').split(b', ')[1].split(b'\xc2\xa0')[0]).decode()
         self.pos = player_name_item.getText().encode('utf8').split(b'\xc2\xa0')[1].decode()
@@ -74,7 +85,7 @@ class EspnParser(object):
         page = response.read() 
 
         soup = BeautifulSoup(page, 'html.parser')
-        header = EspnStatHeader(soup.find_all('tr', {'class': 'playerTableBgRowSubhead tableSubHead'})[0])
+        header = EspnStatHeader(soup)
         for item in soup.find_all('tr', {'class': 'pncPlayerRow'}):
             self._players.append(EspnPlayer(item, header))
             pass
