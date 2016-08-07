@@ -3,14 +3,13 @@ Created on Aug 22, 2015
 
 @author: robertbitel
 '''
-
-from EspnParser import EspnData
+import DataStore
 
 from LeagueInfo import MAFALeagueInfo, MAFALeagueInfo_Playoffs, SuhNommieNationLeagueInfo, FlexLeague, CreateFullVarList
 from FileWriter import WriteByPosition, WriteFullList
 
 if __name__ == '__main__':
-    data = EspnData()
+    data = DataStore.GetPlayerData()
 
     mafa_10_league = CreateFullVarList(10, data, MAFALeagueInfo())
     mafa_12_league = CreateFullVarList(12, data, MAFALeagueInfo())
