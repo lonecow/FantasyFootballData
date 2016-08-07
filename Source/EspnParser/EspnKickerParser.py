@@ -37,7 +37,12 @@ class EspnKickerPlayer(object):
         player_stat_list = proj_item.find_all('td', {'class': 'playertableStat'})
         for count in range(len(header_info.getHeaderInfo())):
             self.stats['SCORED_%s' % (header_info.getHeaderInfo()[count])] = player_stat_list[count].string.split('/')[0]
-            self.stats['ATTEMPTED_%s' % (header_info.getHeaderInfo()[count])] = player_stat_list[count].string.split('/')[1]
+            ''' this is so we can try to fix broken shit '''
+            if len(player_stat_list[count].string.split('/')) > 1:
+                self.stats['ATTEMPTED_%s' % (header_info.getHeaderInfo()[count])] = player_stat_list[count].string.split('/')[1]
+            else:
+                ''' yeah everybody will be perfect if this is what they say'''
+                self.stats['ATTEMPTED_%s' % (header_info.getHeaderInfo()[count])] = player_stat_list[count].string.split('/')[0]
 
         for item in self.stats:
             if self.stats[item] == '--':
