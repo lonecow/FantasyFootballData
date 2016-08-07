@@ -82,9 +82,7 @@ class Player(object):
         self.bye = player_elements[3].get_text().strip()
 
         for element, index in zip(player_elements[4:], range(len(player_elements[4:]))):
-            self.stats[header_info.getHeaderInfo()[index]] = element.get_text().strip()
-
-        print(self.name)
+            self.stats[header_info.getHeaderInfo()[index]] = float(element.get_text().strip().replace(',',''))
 
 
 class BaseParser(object):
