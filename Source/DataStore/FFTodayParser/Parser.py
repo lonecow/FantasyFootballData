@@ -161,9 +161,7 @@ class RBStatHeader(BaseStatHeader):
                                         b'Yard',
                                         b'TD',
                                         b'FPts']
-        HeaderData = [  'COMPLETIONS',
-                        'ATTEMPTS',
-                        'RUSHING_RUSH',
+        HeaderData = [  'RUSHING_RUSH',
                         'RUSHING_YDS',
                         'RUSHING_TD',
                         'RECIEVING_REC',
@@ -188,9 +186,7 @@ class WRStatHeader(BaseStatHeader):
                                         b'Yard',
                                         b'TD',
                                         b'FPts']
-        HeaderData = [  'COMPLETIONS',
-                        'ATTEMPTS',
-                        'RECIEVING_REC',
+        HeaderData = [  'RECIEVING_REC',
                         'RECIEVING_YDS',
                         'RECIEVING_TD',
                         'RUSHING_RUSH',
@@ -212,9 +208,7 @@ class TEStatHeader(BaseStatHeader):
                                         b'Yard',
                                         b'TD',
                                         b'FPts']
-        HeaderData = [  'COMPLETIONS',
-                        'ATTEMPTS',
-                        'RECIEVING_REC',
+        HeaderData = [  'RECIEVING_REC',
                         'RECIEVING_YDS',
                         'RECIEVING_TD',
                         'FANTASY']
