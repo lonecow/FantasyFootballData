@@ -1,9 +1,9 @@
 
 def GetPlayerData():
-    def FindPlayer(PlayerList, Name):
+    def FindPlayer(PlayerList, PlayerToFind):
         found_player = None
         for player in PlayerList:
-            if player.name == Name:
+            if player == PlayerToFind:
                 found_player = player
                 break;
 
@@ -35,7 +35,7 @@ def GetPlayerData():
     all_ff_today_data = GetAllPlayerList(ff_today_data)
 
     for player in all_espn_data:
-        ff_today_player = FindPlayer(all_ff_today_data, player.name)
+        ff_today_player = FindPlayer(all_ff_today_data, player)
         if ff_today_player != None:
             for stat in player.stats:
                 if stat in ff_today_player.stats:

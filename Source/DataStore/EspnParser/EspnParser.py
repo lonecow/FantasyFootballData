@@ -73,6 +73,15 @@ class EspnPlayer(object):
             else:
                 self.stats[item] = float(self.stats[item])
 
+    def __eq__(self, Right):
+        if self is None and Right is None:
+            return True
+        elif Right is None:
+            return False
+        else:
+            return (self.name == Right.name) and (self.pos == Right.pos) and (self.team == Right.team)
+
+
 class EspnParser(object):
     def __init__(self):
         self._players = []

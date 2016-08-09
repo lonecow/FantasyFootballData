@@ -84,6 +84,13 @@ class Player(object):
         for element, index in zip(player_elements[4:], range(len(player_elements[4:]))):
             self.stats[header_info.getHeaderInfo()[index]] = float(element.get_text().strip().replace(',',''))
 
+    def __eq__(self, Right):
+        if self is None and Right is None:
+            return True
+        elif Right is None:
+            return False
+        else:
+            return (self.name == Right.name) and (self.pos == Right.pos) and (self.team == Right.team)
 
 class BaseParser(object):
     def __init__(self, Header, Position):
