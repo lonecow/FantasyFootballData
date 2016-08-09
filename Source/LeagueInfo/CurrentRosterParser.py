@@ -5,9 +5,9 @@ Created on Aug 23, 2015
 '''
 
 try:
-   import urllib2
+    import urllib2  # @UnresolvedImport @UnusedImport
 except:
-    import urllib.request as urllib2
+    import urllib.request as urllib2  # @Reimport
 
 def ConvertTeam(team):
     return team
@@ -66,12 +66,18 @@ class CurrentRosterParser(object):
 
 if __name__ == '__main__':
     import os
-    import urllib
-    import urlparse
+    try:
+        import urllib.request as urllib #@UnusedImport
+    except:
+        import urllib #@Reimport
+    try:
+        import urllib.parse as urlparse #@UnusedImport
+    except:
+        import urlparse #@UnresolvedImport @Reimport
 
     def path2url(path):
         return urlparse.urljoin(
-        'file:', urllib.pathname2url(path))
+        'file:', urllib.pathname2url(path))  # @UndefinedVariable
 
 
     path = path2url(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'PlayerData.txt'))

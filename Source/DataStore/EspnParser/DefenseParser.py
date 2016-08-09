@@ -6,9 +6,9 @@ Created on Aug 23, 2015
 
 from bs4 import BeautifulSoup
 try:
-   import urllib2
+    import urllib2  # @UnresolvedImport @UnusedImport
 except:
-    import urllib.request as urllib2
+    import urllib.request as urllib2  # @Reimport
 
 def removeJavaScript(content):
     contents = ''

@@ -61,17 +61,17 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
     def GetLeaguePlayerOweners(self):
         import os
         try:
-           import urllib.request as urllib
+            import urllib.request as urllib  # @UnusedImport
         except:
-           import urllib
+            import urllib  # @Reimport
         try:
-           import urlparse
+            import urlparse  # @UnresolvedImport @UnusedImport
         except:
-            import urllib.parse as urlparse
+            import urllib.parse as urlparse  # @Reimport
 
         def path2url(path):
             return urlparse.urljoin(
-            'file:', urllib.pathname2url(path))
+            'file:', urllib.pathname2url(path))  # @UndefinedVariable
 
         path = path2url(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'PlayerData.txt'))
         TestClass = CurrentRosterParser()
