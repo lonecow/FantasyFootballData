@@ -31,16 +31,25 @@ def GetPlayerData():
 
     print('Averaging Scores')
 
-    all_espn_data = GetAllPlayerList(espn_data)
-    all_ff_today_data = GetAllPlayerList(ff_today_data)
+    # we are going to use kickers from espn
+    ff_today_data.kickers = espn_data.kickers
+    # we are going to use defense from ff_today
+    espn_data.defense = ff_today_data.defense
 
-    for player in all_espn_data:
-        ff_today_player = FindPlayer(all_ff_today_data, player)
-        if ff_today_player != None:
+    source_1 = espn_data
+    source_2 = ff_today_data
+
+    list1 = GetAllPlayerList(source_1)
+    list2 = GetAllPlayerList(source_2)
+
+    for player in list1:
+        found_player = FindPlayer(list2, player)
+        if found_player != None:
             for stat in player.stats:
-                if stat in ff_today_player.stats:
-                    player.stats[stat] = (player.stats[stat] + ff_today_player.stats[stat]) / 2
+                if stat in found_player.stats:
+                    player.stats[stat] = (player.stats[stat] + found_player.stats[stat]) / 2
         else:
-            print('Could Not Find Player [%s]' % (player.name))
+            #print('Could Not Find Player [%s]' % (player.name))
+            pass
 
-    return espn_data
+    return source_1
