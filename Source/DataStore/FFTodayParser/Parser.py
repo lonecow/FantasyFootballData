@@ -24,7 +24,7 @@ def ConvertTeam(team):
                         'GB':'GB',
                         'HOU':'Hou',
                         'IND':'Ind',
-                        'JAC':'Jac',
+                        'JAC':'Jax',
                         'LAR':'LA',
                         'KC':'KC',
                         'MIA':'Mia',
