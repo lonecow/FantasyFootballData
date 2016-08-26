@@ -9,6 +9,8 @@ try:
 except:
     import urllib.request as urllib2  # @Reimport
 
+from bs4 import BeautifulSoup
+
 def ConvertTeam(team):
     return team
 
@@ -25,23 +27,36 @@ class CurrentRosterStatHeader(object):
     def getHeaderInfo(self):
         return self._data
 
+    def GetColumnName(self, index):
+        name_ret = None
+        for name, column_idx in self._data:
+            if index == column_idx:
+                name_ret = name
+        return name_ret
+
 
 class CurrentRosterPlayer(object):
     def __init__(self, soup, header_info):
         self.stats = {}
 
-        print(soup)
-        info_list = soup.split(b'~')
-        self.name = info_list[0].split(b', ')[0]
-        self.team = info_list[0].split(b', ')[1].split(b' ')[0]
-        self.pos = info_list[0].split(b', ')[1].split(b'Break')[0]
+        table_columns = soup.find_all('td')
 
-        print(self.name)
-        print(self.team)
-        print(self.pos)
-        for (stat, line_num) in header_info.getHeaderInfo():
-            self.stats[stat] = info_list[line_num]
-        print(self.stats)
+
+        self.name = str(table_columns[0].a.string)
+
+        self.team = ConvertTeam(table_columns[0].getText().encode('utf8').split(b', ')[1].split(b'\xc2\xa0')[0]).decode()
+        self.pos =table_columns[0].getText().encode('utf8').split(b'\xc2\xa0')[1].decode()
+
+        self.owner = table_columns[2].string
+
+
+    def __eq__(self, Right):
+        if self is None and Right is None:
+            return True
+        elif Right is None:
+            return False
+        else:
+            return (self.name == Right.name) and (self.pos == Right.pos) and (self.team == Right.team)
 
 
 class CurrentRosterParser(object):
@@ -55,14 +70,15 @@ class CurrentRosterParser(object):
         response = urllib2.urlopen(req)
         page = response.read() 
 
-        header = CurrentRosterStatHeader('')
-        for item in page.split(b'\n'):
-            if b'~' in item:
-                self._players.append(CurrentRosterPlayer(item, header))
+        soup = BeautifulSoup(page, 'html.parser')
+        header = CurrentRosterStatHeader(soup)
+        for item in soup.find_all('tr', {'class': 'pncPlayerRow'}):
+            self._players.append(CurrentRosterPlayer(item, header))
             pass
-    
+
     def getPlayers(self):
         return self._players
+
 
 if __name__ == '__main__':
     import os
@@ -80,6 +96,6 @@ if __name__ == '__main__':
         'file:', urllib.pathname2url(path))  # @UndefinedVariable
 
 
-    path = path2url(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'PlayerData.txt'))
+    path = 'file:///%s' % (os.path.realpath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'Players', 'Players1.html')))
     TestClass = CurrentRosterParser()
     TestClass.AddPlayerStats(path)

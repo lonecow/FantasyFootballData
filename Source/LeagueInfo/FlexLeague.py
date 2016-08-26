@@ -50,7 +50,7 @@ class FlexLeague(BaseLeagueInfo):
     def __init__(self):
         super(BaseLeagueInfo, self).__init__()
 
-    def CreatePosData(self, data):
+    def GetPositionDictionary(self, data):
         flex = []
         flex.extend(data.runningbacks)
         flex.extend(data.widerecievers)

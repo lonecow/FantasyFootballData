@@ -13,7 +13,6 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
     classdocs
     '''
 
-
     _points_ary = [
                     ('COMPLETIONS',      2), #this is 2 because we already minus 1 for the attempt but if it was complete it should be +1
                     ('ATTEMPTS',         -1),
@@ -52,10 +51,7 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
     def __init__(self):
         super(BaseLeagueInfo, self).__init__()
 
-    def CreatePosData(self, data):
-        '''
-        @type data : Espnparser.EspnData
-        '''
+    def GetPositionDictionary(self, data):
         return {'QB': data.quarter_backs, 'RB':data.runningbacks, 'WR':data.widerecievers, 'TE':data.tightends, 'K':data.kickers, 'D':data.defense}
 
     def GetLeaguePlayerOweners(self):
@@ -73,9 +69,10 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
             return urlparse.urljoin(
             'file:', urllib.pathname2url(path))  # @UndefinedVariable
 
-        path = path2url(os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'PlayerData.txt'))
+        base_path = 'file:///%s' % (os.path.realpath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'Players')))
         TestClass = CurrentRosterParser()
-        TestClass.AddPlayerStats(path)
+        for file_name in ('Players1.html','Players2.html','Players3.html','Players4.html','Players5.html',):
+            TestClass.AddPlayerStats(os.path.join(base_path, file_name))
 
         return TestClass.getPlayers()
 

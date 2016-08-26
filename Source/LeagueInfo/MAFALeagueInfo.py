@@ -46,11 +46,10 @@ class MAFALeagueInfo(BaseLeagueInfo):
     _max_positions = {'QB':3, 'RB':5, 'WR':5, 'TE':3, 'K':2, 'D':5}
 
     def __init__(self):
-        super(BaseLeagueInfo, self).__init__()
+        pass
 
-    def CreatePosData(self, data):
+    def GetPositionDictionary(self, data):
         return {'QB': data.quarter_backs, 'RB':data.runningbacks, 'WR':data.widerecievers, 'TE':data.tightends, 'K':data.kickers, 'D':data.defense}
-
 
     def GetLeaguePlayerOweners(self):
         return []

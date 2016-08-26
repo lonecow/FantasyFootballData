@@ -9,12 +9,6 @@ class BaseLeagueInfo(object):
     classdocs
     '''
 
-    def __init__(self, params):
-        '''
-        Constructor
-        '''
-        
-
     def calculatePoints(self, player):
         points = 0.0
 
@@ -32,3 +26,33 @@ class BaseLeagueInfo(object):
 
     def GetPositionMaxCounts(self):
         return self._max_positions
+
+    def GetLeaguePlayerOweners(self):
+        return []
+
+    def GetPositionDictionary(self, data):
+        return {}
+
+    def CreatePosData(self, data):
+        '''
+        @type data : Espnparser.EspnData
+        '''
+        def FindOwner(PlayerToFind, OwnerList):
+            found_player = None
+            for owner_player in OwnerList:
+                if owner_player == PlayerToFind:
+                    found_player = owner_player
+                    break;
+
+            return found_player
+
+        owners_list = self.GetLeaguePlayerOweners()
+
+        for player in data.quarter_backs + data.runningbacks + data.widerecievers + data.tightends + data.kickers + data.defense:
+            owner = FindOwner(player, owners_list)
+            if owner is None:
+                player.owner = 'FA'
+            else:
+                player.owner = owner.owner
+
+        return self.GetPositionDictionary(data)

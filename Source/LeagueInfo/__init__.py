@@ -10,29 +10,18 @@ def CreateFullVarList(NumberOfTeams, ParsedData, LeagueInfo):
     '''
     @type LeagueInfo :BaseLeagueInfo.BaseLeagueInfo
     '''
-    def _addOwners(PlayerList, OwnerList):
-        retval = []
-        player_owner_dict = {}
-        for item in OwnerList:
-            player_owner_dict[item.name] = item.stats['OWNER']
-
-        for item in PlayerList:
-            try:
-                item['owner'] = player_owner_dict[item['name']]
-            except:
-                item['owner'] = 'FA'
-            retval.append(item)
-        return retval
-
     data = []
+
     starting_counts = LeagueInfo.GetPositionStartingCounts()
     max_counts = LeagueInfo.GetPositionMaxCounts()
     pos_data = LeagueInfo.CreatePosData(ParsedData)
-    
+
     for pos in pos_data:
             data.extend(CreateList(NumberOfTeams, starting_counts[pos], pos_data[pos], NumberOfTeams * max_counts[pos], LeagueInfo.calculatePoints))
 
-    return _addOwners(sorted(data, key=lambda k: k['var'], reverse=True), LeagueInfo.GetLeaguePlayerOweners())
+    sorted_data = sorted(data, key=lambda k: k['var'], reverse=True)
+
+    return sorted_data
 
 
 
@@ -42,7 +31,7 @@ def CreateList(NumberOfTeams, NumberOfStartersPerTeam, Players, MaxSizeOfList, c
 
     num_starters = NumberOfStartersPerTeam * NumberOfTeams
     for player in Players:
-        data.append({'name':player.name, 'points':calculatePoints(player), 'pos':player.pos, 'team':player.team})
+        data.append({'name':player.name, 'points':calculatePoints(player), 'pos':player.pos, 'team':player.team, 'owner':player.owner})
     
     sorted_list = sorted(data, key=lambda k: k['points'], reverse=True)[:MaxSizeOfList]
 

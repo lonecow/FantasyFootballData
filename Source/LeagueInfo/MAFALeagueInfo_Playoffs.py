@@ -48,7 +48,7 @@ class MAFALeagueInfo_Playoffs(BaseLeagueInfo):
     def __init__(self):
         super(BaseLeagueInfo, self).__init__()
 
-    def CreatePosData(self, data):
+    def GetPositionDictionary(self, data):
         qbs=[]
         for player in data.quarter_backs:
             if player.team in ('Pit', 'Cin', 'KC', 'Hou', 'Den', 'NE', 'Car', 'Ari', 'Sea', 'Min', 'GB', 'Wsh'):
