@@ -4,7 +4,7 @@ def WriteFullList(Data, FileName):
 
     fd.write('Player,Position,Team,Var,Owner\n')
     for item in Data:
-        fd.write('%s,%s,%s,%.4f,%s\n' % (item['name'], item['pos'], item['team'], item['var'], item['owner']))
+        fd.write('%s,%s,%s,%.4f,%s\n' % (item['name'], item['pos'], item['team'], float(item['var']), item['owner']))
 
     fd.close()
 
