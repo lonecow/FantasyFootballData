@@ -42,6 +42,6 @@ class EspnData(object):
         kicker_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=17&startIndex=15')
         self.kickers = kicker_parser.getPlayers()
 
-        defense_parser = DefenseParser()
-        defense_parser.AddPlayerStats('http://www.fantasysharks.com/apps/bert/forecasts/projections.php?League=&Position=98&scoring=1&Segment=522&uid=4')
-        self.defense = defense_parser.getPlayers()
+        #defense_parser = DefenseParser()
+        #defense_parser.AddPlayerStats('http://www.fantasysharks.com/apps/bert/forecasts/projections.php?League=&Position=98&scoring=1&Segment=522&uid=4')
+        #self.defense = defense_parser.getPlayers()
