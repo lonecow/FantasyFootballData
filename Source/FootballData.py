@@ -25,6 +25,7 @@ if __name__ == '__main__':
                         (mafa_14_league, './MAFA_14_VAR_List.csv',  WriteByPosition),
                         (mafa_14_playoff_league, './MAFA_14_VAR_PLAYOFF_List.csv',  WriteByPosition),
                         (snn_12_league, './SNN_12_VAR_List.csv',    WriteByPosition),
+                        (snn_12_league, './SNN_12_VAR_Full_List.csv',    WriteFullList),
                         (flex_10_league, './FLEX_10_VAR_List.csv',  WriteFullList),
                         (flex_12_league, './FLEX_12_VAR_List.csv',  WriteFullList)]
 
