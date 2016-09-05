@@ -3,6 +3,7 @@ from .MAFALeagueInfo import MAFALeagueInfo
 from .MAFALeagueInfo_Playoffs import MAFALeagueInfo_Playoffs
 from .SuhNommieNationLeagueInfo import SuhNommieNationLeagueInfo
 from .FlexLeague import FlexLeague
+from .AutoLeagueInfo import AutoLeagueInfo
 
 
 
