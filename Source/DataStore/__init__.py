@@ -33,6 +33,7 @@ def GetPlayerData():
 
     # we are going to use kickers from espn
     ff_today_data.kickers = espn_data.kickers
+    ff_today_data.defenseteam = espn_data.defenseteam
     # we are going to use defense from ff_today
     espn_data.defense = ff_today_data.defense
 

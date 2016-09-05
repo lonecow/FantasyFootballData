@@ -31,7 +31,10 @@ def CreateList(NumberOfTeams, NumberOfStartersPerTeam, Players, MaxSizeOfList, c
 
     num_starters = NumberOfStartersPerTeam * NumberOfTeams
     for player in Players:
-        data.append({'name':player.name, 'points':calculatePoints(player), 'pos':player.pos, 'team':player.team, 'owner':player.owner})
+        if 'owner' in dir(player):
+            data.append({'name':player.name, 'points':calculatePoints(player), 'pos':player.pos, 'team':player.team, 'owner':player.owner})
+        else:
+            data.append({'name':player.name, 'points':calculatePoints(player), 'pos':player.pos, 'team':player.team, 'owner':'FA'})
     
     sorted_list = sorted(data, key=lambda k: k['points'], reverse=True)[:MaxSizeOfList]
 

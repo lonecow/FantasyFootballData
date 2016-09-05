@@ -2,6 +2,7 @@
 from .EspnParser import EspnParser
 from .EspnKickerParser import EspnKickerParser
 from .DefenseParser import DefenseParser
+from .DefenseTeamParser import DefenseTeamParser
 
 class EspnData(object):
     def __init__(self):
@@ -41,6 +42,13 @@ class EspnData(object):
         kicker_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=17')
         kicker_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=17&startIndex=15')
         self.kickers = kicker_parser.getPlayers()
+
+
+        dt_parser = DefenseTeamParser()
+        dt_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=16')
+        dt_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=16&startIndex=15')
+        dt_parser.AddPlayerStats('http://games.espn.go.com/ffl/tools/projections?display=alt&slotCategoryId=16&startIndex=30')
+        self.defenseteam = dt_parser.getPlayers()
 
         #defense_parser = DefenseParser()
         #defense_parser.AddPlayerStats('http://www.fantasysharks.com/apps/bert/forecasts/projections.php?League=&Position=98&scoring=1&Segment=522&uid=4')
