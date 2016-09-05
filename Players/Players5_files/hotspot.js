@@ -1,1 +1,0 @@
-define(["comp/baseComp","utils/objectUtils","infra/logger"],function(t,o,i){function e(o){t.call(this,o)}return e.prototype=new t,e.prototype.internalDraw=function(){t.prototype.internalDraw.call(this),this.div.style.opacity=0,this.div.style.backgroundColor="white",this.div.style.filter="alpha(opacity=1)"},i.log("hotspot component loaded"),e});
