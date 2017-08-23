@@ -15,13 +15,15 @@ class EspnData(object):
         positions = [   ('QB', self.quarter_backs),
                         ('WR', self.widerecievers),
                         ('TE', self.tightends),
-                        ('RB', self.runningbacks)]
+                        ('RB', self.runningbacks),
+                        ('RB, EDR', self.runningbacks)]
         base_parser = EspnParser()
 
         categories = [0, 2, 4, 6]
         for category in categories:
             for index in range(0, 300, 40):
                 website = 'http://games.espn.com/ffl/tools/projections?&slotCategoryId=%s&startIndex=%s' % (category, index)
+                print('Reading Website [%s]' % (website))
                 if EspnParser.PageHasPlayers(website):
                     base_parser.AddPlayerStats(website)
                 elif index == 0:
@@ -35,7 +37,7 @@ class EspnData(object):
                     found = True
 
             if not found:
-                raise Exception('Could Not find Position [%s]' % player.pos)
+                raise Exception('Could Not find Position [%s] [%s]' % (player.pos, player.name))
 
 
         kicker_parser = EspnKickerParser()
