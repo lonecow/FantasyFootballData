@@ -31,9 +31,9 @@ class EspnKickerPlayer(object):
         self.pos = 'K'
 
         for item in soup.find_all('tr', {'class': 'tableBody'}):
-            if item.td.string == '2016 Projections':
+            if item.td.string == '2017 Projections':
                 proj_item = item
-        
+
         player_stat_list = proj_item.find_all('td', {'class': 'playertableStat'})
         for count in range(len(header_info.getHeaderInfo())):
             self.stats['SCORED_%s' % (header_info.getHeaderInfo()[count])] = player_stat_list[count].string.split('/')[0]

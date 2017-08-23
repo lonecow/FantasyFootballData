@@ -33,7 +33,7 @@ class EspnKickerPlayer(object):
         print('Defense Team %s' % (self.name))
 
         for item in soup.find_all('tr', {'class': 'tableBody'}):
-            if item.td.string == '2016 Projections':
+            if item.td.string == '2017 Projections':
                 proj_item = item
         
         player_stat_list = proj_item.find_all('td', {'class': 'playertableStat'})
