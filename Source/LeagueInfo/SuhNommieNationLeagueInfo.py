@@ -55,24 +55,19 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
         return {'QB': data.quarter_backs, 'RB':data.runningbacks, 'WR':data.widerecievers, 'TE':data.tightends, 'K':data.kickers, 'D':data.defense}
 
     def GetLeaguePlayerOweners(self):
-        import os
-        try:
-            import urllib.request as urllib  # @UnusedImport
-        except:
-            import urllib  # @Reimport
-        try:
-            import urlparse  # @UnresolvedImport @UnusedImport
-        except:
-            import urllib.parse as urlparse  # @Reimport
-
-        def path2url(path):
-            return urlparse.urljoin(
-            'file:', urllib.pathname2url(path))  # @UndefinedVariable
-
-        base_path = 'file:///%s' % (os.path.realpath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'Players')))
         TestClass = CurrentRosterParser()
-        for file_name in ('Players1.html','Players2.html','Players3.html','Players4.html','Players5.html',):
-            TestClass.AddPlayerStats(os.path.join(base_path, file_name))
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2&seasonId=2017&avail=4&context=freeagency&view=overview&startIndex=0')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2&seasonId=2017&avail=4&context=freeagency&view=overview&startIndex=50')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2&seasonId=2017&avail=4&context=freeagency&view=overview&startIndex=100')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2&seasonId=2017&avail=4&context=freeagency&view=overview&startIndex=150')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2&seasonId=2017&avail=4&context=freeagency&view=overview&startIndex=200')
+
+        print(len(TestClass.getPlayers()))
+        for player in TestClass.getPlayers():
+            print(player)
 
         return TestClass.getPlayers()
 
+if __name__ == '__main__':
+    snn = SuhNommieNationLeagueInfo()
+    snn.GetLeaguePlayerOweners()

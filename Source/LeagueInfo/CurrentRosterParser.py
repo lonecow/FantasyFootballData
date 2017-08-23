@@ -4,11 +4,6 @@ Created on Aug 23, 2015
 @author: robertbitel
 '''
 
-try:
-    import urllib2  # @UnresolvedImport @UnusedImport
-except:
-    import urllib.request as urllib2  # @Reimport
-
 from bs4 import BeautifulSoup
 
 def ConvertTeam(team):
@@ -56,19 +51,79 @@ class CurrentRosterPlayer(object):
         elif Right is None:
             return False
         else:
-            return (self.name == Right.name) and (self.pos == Right.pos) and (self.team == Right.team)
+            return (self.name == Right.name) and (self.team == Right.team)
 
+    def __str__(self):
+        return ('Name: %s Team: %s Pos: %s Owner: %s' % (self.name, self.team, self.pos, self.owner))
+
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait # available since 2.4.0
+from selenium.webdriver.support import expected_conditions as EC # available since 2.26.0
+from selenium.webdriver.common.by import By
+
+class EspnProtectedWebsiteGrabber():
+    def __init__(self):
+        self.driver = None
+
+    def Connect(self):
+
+        self.Disconnect()
+
+        chromeOptions = webdriver.ChromeOptions()
+        prefs = {"download.default_directory" : 'C:\\Users\\robert.bitel\\Downloads'}
+        chromeOptions.add_experimental_option("prefs",prefs)
+        chromedriver = '.\chromedriver.exe'
+        self.driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions)
+
+        self.driver.get('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2')
+
+        WebDriverWait(self.driver,1000).until(EC.presence_of_all_elements_located((By.XPATH,"(//iframe)")))
+        frms = self.driver.find_elements_by_xpath("(//iframe)")
+
+        for frame in frms:
+            print(frame.id)
+            print(frame.get_attribute("name"))
+            if frame.get_attribute('name') == 'disneyid-iframe':
+                break
+        '''TODO they tend to change the frame this needs to be fixed '''
+        self.driver.switch_to_frame(frame)
+
+        WebDriverWait(self.driver, 100).until(EC.presence_of_element_located((By.XPATH, '//*/div/div/section/section/form/section/div[2]/div/label/span[2]/input')))
+        password = self.driver.find_elements_by_xpath("//*/div/div/section/section/form/section/div[2]/div/label/span[2]/input")
+        if len(password) > 0:
+            password = password[0]
+
+            username = self.driver.find_elements_by_xpath("//*/input[@type='email']")
+            username = username[0]
+            username.send_keys('lonecow@gmail.com')
+            password.send_keys('WxFUua!e69')
+
+            enter = self.driver.find_elements_by_xpath("//*[@id=\"did-ui\"]/div/div/section/section/form/section/div[3]/button[2]")
+            enterBtn = enter[0]
+            enterBtn.click()
+
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, "playerTableContainerDiv")))
+
+    def Disconnect(self):
+        if self.driver != None:
+            self.driver.quit()
+            self.driver = None
+
+    def GetWebsite(self, website):
+        if self.driver != None:
+            self.driver.get(website)
+            return self.driver.page_source
+        else:
+            return ''
 
 class CurrentRosterParser(object):
     def __init__(self):
         self._players = []
+        self.driver = EspnProtectedWebsiteGrabber()
+        self.driver.Connect()
 
     def AddPlayerStats(self, website):
-        user_agent = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-US) AppleWebKit/534.3 (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3'
-        headers = { 'User-Agent' : user_agent }
-        req = urllib2.Request(website, None, headers)
-        response = urllib2.urlopen(req)
-        page = response.read() 
+        page = self.driver.GetWebsite(website)
 
         soup = BeautifulSoup(page, 'html.parser')
         header = CurrentRosterStatHeader(soup)
@@ -81,21 +136,5 @@ class CurrentRosterParser(object):
 
 
 if __name__ == '__main__':
-    import os
-    try:
-        import urllib.request as urllib #@UnusedImport
-    except:
-        import urllib #@Reimport
-    try:
-        import urllib.parse as urlparse #@UnusedImport
-    except:
-        import urlparse #@UnresolvedImport @Reimport
-
-    def path2url(path):
-        return urlparse.urljoin(
-        'file:', urllib.pathname2url(path))  # @UndefinedVariable
-
-
-    path = 'file:///%s' % (os.path.realpath(os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'Players', 'Players1.html')))
     TestClass = CurrentRosterParser()
-    TestClass.AddPlayerStats(path)
+    TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2&seasonId=2017&seasonId=2016&=undefined&avail=4&context=freeagency&view=overview')

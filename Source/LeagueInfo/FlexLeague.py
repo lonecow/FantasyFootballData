@@ -6,6 +6,8 @@ Created on Aug 23, 2015
 
 from .BaseLeagueInfo import BaseLeagueInfo
 
+from .CurrentRosterParser import CurrentRosterParser
+
 class FlexLeague(BaseLeagueInfo):
     '''
     classdocs
@@ -59,4 +61,10 @@ class FlexLeague(BaseLeagueInfo):
 
 
     def GetLeaguePlayerOweners(self):
-        return []
+        TestClass = CurrentRosterParser()
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=356702&teamId=-2147483648&avail=4&startIndex=0')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=356702&teamId=-2147483648&avail=4&startIndex=50')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=356702&teamId=-2147483648&avail=4&startIndex=100')
+        TestClass.AddPlayerStats('http://games.espn.com/ffl/freeagency?leagueId=356702&teamId=-2147483648&avail=4&startIndex=150')
+
+        return TestClass.getPlayers()
