@@ -42,7 +42,9 @@ class SuhNommieNationLeagueInfo(BaseLeagueInfo):
                     ('INTERCEPTIONS',   5),
                     ('FUMBLESRECOVERED',5),
                     ('FUMBLESFORCED',   5),
-                    ('DEFENSEIVETDS',   10)]
+                    ('DEFENSEIVETDS',   10),
+                    ('POINTSAGAINST',   float(-1/21)),
+                    ('YARDSAGAINST',    0)]
 
     _starting_positions = {'QB':2, 'RB':2, 'WR':3, 'TE':1, 'K':1, 'D':3}
     _max_positions = {'QB':4, 'RB':5, 'WR':6, 'TE':3, 'K':2, 'D':5}

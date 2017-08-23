@@ -45,4 +45,3 @@ def CreateList(NumberOfTeams, NumberOfStartersPerTeam, Players, MaxSizeOfList, c
         player['var'] = player['points'] - ave_starting_player
 
     return sorted_list
-    
