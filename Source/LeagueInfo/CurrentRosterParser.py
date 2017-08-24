@@ -69,11 +69,13 @@ class EspnProtectedWebsiteGrabber():
 
         self.Disconnect()
 
-        chromeOptions = webdriver.ChromeOptions()
-        prefs = {"download.default_directory" : 'C:\\Users\\robert.bitel\\Downloads'}
-        chromeOptions.add_experimental_option("prefs",prefs)
-        chromedriver = '.\chromedriver.exe'
-        self.driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions)
+        #chromeOptions = webdriver.ChromeOptions()
+        #prefs = {"download.default_directory" : 'C:\\Users\\robert.bitel\\Downloads'}
+        #chromeOptions.add_experimental_option("prefs",prefs)
+        #chromedriver = '.\chromedriver.exe'
+        #self.driver = webdriver.Chrome(executable_path=chromedriver, chrome_options=chromeOptions)
+        phantomjsdriver = './/phantomjs-2.1.1-windows//bin//phantomjs.exe'
+        self.driver = webdriver.PhantomJS(phantomjsdriver)
 
         self.driver.get('http://games.espn.com/ffl/freeagency?leagueId=182037&teamId=2')
 
