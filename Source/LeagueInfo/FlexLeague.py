@@ -15,11 +15,11 @@ class FlexLeague(BaseLeagueInfo):
 
 
     _points_ary = [
-                    ('COMPLETIONS',      0),
-                    ('ATTEMPTS',         0),
-                    ('PASSING_YDS',      0.05),
+                    ('COMPLETIONS',      1),
+                    ('ATTEMPTS',         -1),
+                    ('PASSING_YDS',      0.07),
                     ('PASSING_TD',       10),
-                    ('PASSING_INT',      -2),
+                    ('PASSING_INT',      -3),
                     ('RUSHING_RUSH',     0),
                     ('RUSHING_YDS',      0.2),
                     ('RUSHING_TD',       10),
