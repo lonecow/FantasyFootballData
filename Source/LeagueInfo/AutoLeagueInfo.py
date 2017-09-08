@@ -44,8 +44,8 @@ class AutoLeagueInfo(BaseLeagueInfo):
                     ('POINTSAGAINST',   float(-1/21)),
                     ('YARDSAGAINST',    0)]
 
-    _starting_positions = {'QB':1, 'RB':2, 'WR':2, 'TE':1, 'WRT':1, 'K':1, 'DT':1}
-    _max_positions = {'QB':3, 'RB':5, 'WR':5, 'TE':3, 'WRT':2, 'K':2, 'DT':2}
+    _starting_positions = {'QB':1, 'RB':2, 'WR':2, 'TE':1, 'K':1, 'DT':1}
+    _max_positions = {'QB':3, 'RB':5, 'WR':5, 'TE':3, 'K':2, 'DT':2}
 
     def __init__(self):
         pass
@@ -55,7 +55,6 @@ class AutoLeagueInfo(BaseLeagueInfo):
                     'RB':data.runningbacks,
                     'WR':data.widerecievers,
                     'TE':data.tightends,
-                    'WRT': (data.runningbacks + data.widerecievers + data.tightends),
                     'K':data.kickers,
                     'DT':data.defenseteam}
 
